@@ -9,13 +9,19 @@ const Header = () => {
   return (
     <nav className='header'>
         <div className='header__list--container'>
-            <ul className='header__list--ul'>
-                <li>about the dev</li>
-                <li>how to play</li>
+            <ul className='header__list--ul '>
+                <Link to={`howtoplay`}>
+                    <li className='header__list--li header__hover '>How to Play</li>
+                </Link>
+              <Link className='header__hover' to={`about`}> 
+                <li className='header__hover'>About the Dev</li> 
+              </Link>  
             </ul>
         </div>
         <div className='header__heartIcon'>
-            <img className='header__img' src={heart} />
+            <Link to={`/`}>
+                <img className='header__img header__img--animated' src={heart} />
+            </Link>
         </div>
         <div className='header__worldIcon'>
             <img className='header__img' src={planet}/>

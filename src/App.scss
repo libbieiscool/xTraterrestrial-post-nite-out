@@ -11,41 +11,5 @@ height: 100vh;
 background-image: url("./assets/images/background/repeating-stars-smaller.png") ;
 background-repeat: repeat;
 
-&__pageContainer{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    margin-right:auto; 
-    margin-left: auto;
-    width: 90vw;
-    height: 80vh;
-    // background-color: $white;
-    border-radius: 0.5rem;
-    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-
-    // &::before {
-    //   content: "";
-    //   z-index: -1;
-    //   height: 100%;
-    //   width: 100%;
-    // }
-}
 }
 
-// @media (prefers-reduced-motion: no-preference) {
-//   .App-logo {
-//     animation: App-logo-spin infinite 20s linear;
-//   }
-// }
-
-
-// @keyframes App-logo-spin {
-//   from {
-//     transform: rotate(0deg);
-//   }
-//   to {
-//     transform: rotate(360deg);
-//   }
-// }
