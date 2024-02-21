@@ -2,6 +2,8 @@ import React from 'react';
 import '../Header/Header.scss'; 
 import planet from '../../assets/icons/world.png'; 
 import heart from "../../assets/icons/heart.png"; 
+import { NavLink, Link } from 'react-router-dom';
+
 
 const Header = () => {
   return (

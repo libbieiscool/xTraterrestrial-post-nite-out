@@ -1,0 +1,10 @@
+@use '../../styles/partials/globals.scss' as *; 
+@use '../../styles/partials/mixins.scss' as *; 
+@use '../../styles/partials/typography.scss' as *; 
+@use '../../styles/partials/variables' as *; 
+
+.welcome{
+    display: flex;
+    background-color: aqua;
+    margin:0;
+}
