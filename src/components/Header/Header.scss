@@ -1,0 +1,39 @@
+@use '../../styles/partials/globals.scss' as *; 
+@use '../../styles/partials/mixins.scss' as *; 
+@use '../../styles/partials/typography.scss' as *; 
+@use '../../styles/partials/variables' as *; 
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1.5rem; 
+    padding-left: 1rem;
+    padding-right: 1.5rem;
+    padding-bottom: 1.5rem;
+    background-color: $dark-purple;
+
+    height: 5rem;
+    color: $white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    
+&__img{
+    height:3rem;
+}
+
+&__list{
+    &--container{
+        display: flex;
+        justify-content: flex-start;
+    }
+    &--ul{
+        list-style: none;
+        padding:none;
+    }
+}
+
+}
+ul{
+    padding-inline-start: 0;
+}
