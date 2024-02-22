@@ -10,7 +10,6 @@ const Welcome = () => {
       <h1 className='welcome__title'>xTra-terrestrial Post Nite Out Adventure</h1>
       <Link to={`gameplay`}>
         <img className='welcome__button floating' alt="Play Button" src={playButton}/>
-        
       </Link>
       <h2>Play game</h2>
     </div>
