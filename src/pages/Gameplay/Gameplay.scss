@@ -2,3 +2,60 @@
 @use '../../styles/partials/mixins.scss' as *; 
 @use '../../styles/partials/typography.scss' as *; 
 @use '../../styles/partials/variables' as *; 
+
+.gamePlay{
+    display: flex;
+    flex-direction: column ;
+    &__header{
+        font-family: Zara;
+        font-weight: 400;
+        padding-bottom: 1.5rem;
+        font-size: 3.5rem;
+        // line-height: 4rem;
+        text-decoration: underline;
+    }
+    &__container{
+        padding-bottom: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    &__setting{
+
+        text-wrap: wrap;
+        width:70%; 
+        justify-content: center;
+        font-size: 2rem;
+        text-align: center;
+        padding-bottom: 1rem;
+
+        &--detail{
+            text-decoration: underline 2px;
+
+        }
+    }
+
+    &__startButton{
+        background-color: $light-purple;
+        color: $white;
+        border-style: none;
+        border-radius: 1.25rem;
+        font-family: "Zara";
+        font-weight: 400;
+        font-size: 2rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        -webkit-filter: drop-shadow( 12px  green);
+        filter: drop-shadow(12px 12px 12px  #a3b18a);
+        
+
+        &:hover{
+            background-color: $dark-purple;
+            transition: 0.2s ease-in-out;
+        }
+    }
+}

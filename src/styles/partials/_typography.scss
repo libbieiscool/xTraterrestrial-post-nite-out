@@ -1,5 +1,5 @@
 
-//ZARA FONT
+//ZARA FONT - HEADER FONT
 @font-face {
     font-family:"Zara";
     src: url("../../assets/fonts/Zara/Zara-Oblique.woff") format("woff"), 
@@ -15,4 +15,20 @@
     font-weight: 400;
 }
 
-//OTHER FONT
+// SECONDARY FONT - ABORDAGE
+@font-face {
+    font-family: "Abordage" ;
+    src: url("../../assets/fonts/Abordage/Abordage-Regular.woff2") format("woff2"), 
+    url("../../assets/fonts/Abordage/Abordage-Regular.woff") format("woff"), 
+    url("../../assets/fonts/Abordage/Abordage-Regular.ttf") format("ttf");
+    font-weight: 400;
+}
+
+// ALT SECONDARY FONT - TERMINAL
+@font-face {
+    font-family: "Terminal";
+    src: url("../../assets/fonts/Terminal/terminal-grotesque-webfont.woff2") format("woff2"), 
+    url("../../assets/fonts/Terminal/terminal-grotesque-webfont.woff") format("woff"), 
+    url("../../assets/fonts/Terminal/terminal-grotesque-webfont.ttf") format("ttf");
+    font-weight: normal;
+}
