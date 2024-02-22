@@ -7,7 +7,6 @@
 .textBoxBottom{
     @include textBox; 
 
-
     &__names{
         display: flex;
         flex-direction: row;

@@ -17,7 +17,7 @@ body{
 }
 .body__block{
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
       margin-top: 3rem;
       margin-bottom: 3rem;
@@ -72,4 +72,28 @@ a{
 	100% {
 		-webkit-transform: rotate(-4deg);	
 	}				
+}
+//fade in animation
+.fadeIn{
+	animation-name: fadeIn;
+	-webkit-animation-name: fadeIn;	
+
+	animation-duration: 1.5s;	
+	-webkit-animation-duration: 1.5s;
+
+	animation-timing-function: ease-in;	
+	-webkit-animation-timing-function: ease-in;		
+
+	visibility: visible !important;	
+}
+
+@keyframes fadeIn {
+	0% { opacity: 0;}
+	100% { opacity: 1;	}		
+}
+
+@-webkit-keyframes fadeIn {
+	0% { opacity: 0;}
+
+	100% { opacity: 1;	}		
 }

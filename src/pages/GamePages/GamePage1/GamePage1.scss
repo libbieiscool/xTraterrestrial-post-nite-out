@@ -25,5 +25,44 @@
     &__textBoxBottom{
        @include textBottomPlacement
     }
+
+    &__character{
+        display: flex;
+        flex-direction: row;    
+        &--right{
+               max-height: 40vh;
+               display: flex;
+               align-items: flex-end;
+               position: relative;
+               left:15rem; 
+               bottom: 0;   
+            @include tablet{
+                max-height: 50vh;
+                left: 20rem;
+                bottom: 0; 
+            }
+            @include desktop{
+                left: 30rem;
+                bottom: 0;
+            } 
+        }
+    &--left{
+        max-height: 40vh;
+        position: relative;
+        right:15rem; 
+        @include tablet{
+            max-height: 50vh;
+            right: 20rem;
+            bottom: 0; 
+        }
+        @include desktop{
+            right: 30rem;
+            bottom: 0;
+        }
+    }
+    } 
 }
+
+
+
 
