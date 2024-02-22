@@ -1,14 +1,22 @@
-import React from 'react'
+import React from 'react'; 
+import "../TextBoxBottom/TextBoxBottom.scss"; 
 
 
-
-function TextBoxBottom({body}){
+function TextBoxBottom({bottomText}){
     return (
-      <div className='textBoxTop'>
-          <h1 className='textBoxTop__header'>{body.title}</h1>
-          <div className='textBoxTop__body'>
-              <p className='textBoxTop__para'> {body.text} </p>
+      <div className='textBoxBottom'>
+        <div className='textBoxBottom__names'>
+          <div>
+            <h1 className='textBoxBottom__header--left'>{bottomText.nameLeft}</h1>
           </div>
+          <div>
+            <h1 className='textBoxBottom__header--right'> {bottomText.nameRight}</h1>
+          </div>
+        </div>
+
+        <div className='textBoxBottom__body'>
+              <p className='textBoxBottom__para'> {bottomText.text} </p>
+        </div>
       </div>
     )
   }

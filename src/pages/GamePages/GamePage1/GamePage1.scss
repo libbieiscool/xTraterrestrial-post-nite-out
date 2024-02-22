@@ -21,5 +21,9 @@
     &__optionB{
     @include optionB
     }
+
+    &__textBoxBottom{
+       @include textBottomPlacement
+    }
 }
 
