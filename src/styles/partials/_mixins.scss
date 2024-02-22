@@ -6,3 +6,47 @@
     position:absolute;
     top:1rem; 
 }
+
+@mixin optionA {
+    display: flex;
+    justify-content: center;
+    align-content: flex-end ;
+    position:absolute;
+    bottom:5rem; 
+    left:10rem; 
+}
+
+@mixin optionB {
+    display: flex;
+    justify-content: center;
+    align-content: flex-end ;
+    position:absolute;
+    bottom:5rem; 
+    right:10rem; 
+}
+
+@mixin optionDesign{
+    width:80%; 
+    height: auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top:1rem; 
+    padding-bottom: 1rem;
+    background-color: pink;
+    border-radius: 1rem;
+
+    &:hover{
+        background-color: aqua;
+        transition: ease-in-out, 0.25s;
+
+        animation-name: tossing;
+        -webkit-animation-name: tossing;	
+    
+        animation-duration: 1s;	
+        -webkit-animation-duration: 1s;
+    
+        animation-iteration-count: infinite;
+        -webkit-animation-iteration-count: infinite;
+
+    }
+}
