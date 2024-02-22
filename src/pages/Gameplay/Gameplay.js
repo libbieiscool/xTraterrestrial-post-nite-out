@@ -17,9 +17,9 @@ const Gameplay = () => {
         </div>
 
         <div>
-            <Link >
+            <Link to={`page1`} >
                 <button className='gamePlay__startButton'>
-                    <h2>Lets Go Home!</h2>
+                    <h2>Let's Go Home!</h2>
                 </button>
             </Link>
         </div>

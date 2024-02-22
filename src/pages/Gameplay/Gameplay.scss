@@ -1,4 +1,4 @@
-@use '../../styles/partials/globals.scss' as *; 
+@use '../../styles/partials/globals' as *; 
 @use '../../styles/partials/mixins.scss' as *; 
 @use '../../styles/partials/typography.scss' as *; 
 @use '../../styles/partials/variables' as *; 
@@ -6,6 +6,7 @@
 .gamePlay{
     display: flex;
     flex-direction: column ;
+
     &__header{
         font-family: Zara;
         font-weight: 400;
