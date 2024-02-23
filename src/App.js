@@ -21,8 +21,8 @@ function App() {
           <Route path="/howtoplay" element={<HowTo/>}/>
           <Route path="/gameplay" element={<Gameplay/>} /> 
           <Route path="/gameover" element={<GameOver/> } />
-          <Route path="/gameplay/page1" element={<GamePage1/>}/> 
-          <Route path="/gameplay/page2" element={<GamePage2/>}/>
+          <Route path="/page1" element={<GamePage1/>}/> 
+          <Route path="/page2" element={<GamePage2/>}/>
       </Routes>
       <Footer/>
       </BrowserRouter>

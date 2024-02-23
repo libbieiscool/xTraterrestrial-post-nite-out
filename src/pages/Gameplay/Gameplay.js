@@ -17,7 +17,7 @@ const Gameplay = () => {
         </div>
 
         <div>
-            <Link to={`page1`} >
+            <Link to={`/page1`} >
                 <button className='gamePlay__startButton'>
                     <h2>Let's Go Home!</h2>
                 </button>

@@ -3,7 +3,7 @@ import './GamePage2.scss';
 
 const GamePage2 = () => {
   return (
-    <div>
+    <div className='body__block'>
       
     </div>
   )

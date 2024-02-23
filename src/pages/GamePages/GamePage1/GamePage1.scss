@@ -14,6 +14,10 @@
     &__textBox{
         @include topTextPlacement
     }
+
+    &__option{
+        @include singleOption
+    }
     &__optionA{
     @include optionA
     }

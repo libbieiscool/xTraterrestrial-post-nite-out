@@ -6,8 +6,6 @@ import OptionBButton from '../../../components/OptionBButton/OptionBButton';
 import TextBoxBottom from '../../../components/TextBoxBottom/TextBoxBottom';
 
 
-
-
 const ExamplePage = () => {
     const [body,setBody] = useState(
         {title:"",
