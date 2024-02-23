@@ -6,6 +6,7 @@ import OptionBButton from '../../../components/OptionBButton/OptionBButton';
 import { useState } from 'react';
 import friendv2 from "../../../assets/images/characters/claw_grl34.png"
 import placeholder from "../../../assets/images/characters/placeholder.png"
+import hand from "../../../assets/images/misc/MuneyGif.gif"
 import { Link } from 'react-router-dom';
 
 
@@ -25,24 +26,28 @@ const GamePage2 = () => {
 
   return (
     <div className='body__block--character gamePage2'>
-     <div className='gamePage2__textBox'>
+     <div className='gamePage2__textBox '>
         <TextBoxTop body={body}/>
     </div>
      <div className='gamePage2__options'>
        
-          <Link className='gamePage2__optionA' >
+          <Link to={`/page3`} className='gamePage2__optionA' >
             <OptionAButton optionA={optionA}/>
           </Link>
     
-          <Link className='gamePage2__optionB'>
+          <Link to={`/page3`} className='gamePage2__optionB'>
             <OptionBButton optionB={optionB}/> 
           </Link>
   
       </div>
+
+      <img src={hand} className='gamePage2__character--center' alt="hand" /> 
+
       <div className='gamePage2__character'>
-        <img className='gamePage2__character--right fadeIn' alt='bestie' src={friendv2}/> 
-        <img className='gamePage2__character--left fadeIn' alt='gameplayer' src={placeholder}/>
+        <img className='gamePage2__character--right ' alt='bestie' src={friendv2}/> 
+        <img className='gamePage2__character--left ' alt='gameplayer' src={placeholder}/>
       </div>
+
     </div>
   )
 }

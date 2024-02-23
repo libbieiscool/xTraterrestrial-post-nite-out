@@ -10,6 +10,9 @@ import GameOver from './pages/GameOver/GameOver';
 import GamePage1 from './pages/GamePages/GamePage1/GamePage1';
 import GamePage2 from './pages/GamePages/GamePage2/GamePage2';
 import GamePage3 from './pages/GamePages/GamePage3/GamePage3';
+import GamePage4 from './pages/GamePages/GamePage4/GamePage4';
+import GamePage5a from './pages/GamePages/GamePage5a/GamePage5a';
+import GamePage5b from './pages/GamePages/GamePage5b/GamePage5b';
 
 function App() {
   return (
@@ -25,6 +28,9 @@ function App() {
           <Route path="/page1" element={<GamePage1/>}/> 
           <Route path="/page2" element={<GamePage2/>}/>
           <Route path="/page3" element={<GamePage3/>}/> 
+          <Route path="/page4" element={<GamePage4/>} />
+          <Route path="/page5a" element={<GamePage5a/>} /> 
+          <Route path="/page5b" element={<GamePage5b/>}/>
       </Routes>
       <Footer/>
       </BrowserRouter>

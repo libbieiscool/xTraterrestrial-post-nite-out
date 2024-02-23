@@ -120,9 +120,11 @@
     @include tablet{
         width:50%; 
         height: auto;
+        max-width: 30rem;
     }
     @include desktop{
         width:80%; 
+        max-width: 35rem;
     }
     
     &:hover{

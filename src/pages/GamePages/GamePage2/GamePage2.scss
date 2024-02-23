@@ -5,7 +5,7 @@
 
 .gamePage2{
    @include gamepage; 
-   
+
     &__textBox{
         @include topTextPlacement
     }
@@ -34,9 +34,53 @@
         &--left{
             @include leftCharacter
         }
-    } 
+        &--center{
+            height:17rem; 
+            position: relative;
+            top: 14rem;
+            animation-name: floating;
+	        -webkit-animation-name: floating;
+            -webkit-filter: drop-shadow(5px 5px 10px #0badaa);
+            filter: drop-shadow(5px 5px 10px #0badaa);
+            
+            transition: all 0.2s ease;
 
+	        animation-duration: 1.5s;	
+	        -webkit-animation-duration: 1.5s;
+
+	        animation-iteration-count: infinite;
+	        -webkit-animation-iteration-count: infinite;
+        }
+
+        @keyframes floating {
+            0% {
+                transform: translateY(0%);	
+            }
+            50% {
+                transform: translateY(8%);	
+            }	
+            100% {
+                transform: translateY(0%);
+            }			
+        }
+
+        @-webkit-keyframes floating {
+            0% {
+                -webkit-transform: translateY(0%);	
+            }
+            50% {
+                -webkit-transform: translateY(8%);	
+            }	
+            100% {
+                -webkit-transform: translateY(0%);
+            }
+            }
+            
 }
+
+} 
+
+
 
 
 
