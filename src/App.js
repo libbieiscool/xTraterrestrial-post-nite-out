@@ -9,6 +9,7 @@ import Gameplay from './pages/Gameplay/Gameplay';
 import GameOver from './pages/GameOver/GameOver';
 import GamePage1 from './pages/GamePages/GamePage1/GamePage1';
 import GamePage2 from './pages/GamePages/GamePage2/GamePage2';
+import GamePage3 from './pages/GamePages/GamePage3/GamePage3';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="/gameover" element={<GameOver/> } />
           <Route path="/page1" element={<GamePage1/>}/> 
           <Route path="/page2" element={<GamePage2/>}/>
+          <Route path="/page3" element={<GamePage3/>}/> 
       </Routes>
       <Footer/>
       </BrowserRouter>

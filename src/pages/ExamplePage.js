@@ -29,6 +29,7 @@ const ExamplePage = () => {
 
   return (
     <div className='body__block gamePage'>
+
       <div className='gamePage__textBox'>
         <TextBoxTop body={body}/>
       </div>

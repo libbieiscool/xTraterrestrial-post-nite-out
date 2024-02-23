@@ -22,12 +22,12 @@ const GamePage1 = () => {
 
 
   return (
-    <div className='body__block gamePage'>
+    <div className='body__block--character gamePage'>
       <div className='gamePage__textBox fadeIn'>
         <TextBoxTop body={body}/>
       </div>
       <Link className='gamePage__option fadeInDelayed' to={`/page2`}>
-      <div >
+      <div className='gamePage__option--box'>
         <SingleOptionButton singleOption={singleOption}/>
       </div>
       </Link>

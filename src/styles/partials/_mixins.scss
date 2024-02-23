@@ -22,9 +22,7 @@
 }
 
 
-///misc Mixins
-
-
+///Mixins for components
 @mixin textBox{
     display: flex;
     flex-direction: column;
@@ -33,12 +31,13 @@
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     color:$grey; 
-    height: 8rem;
+    height: 7rem;
     margin-top: 0.5rem;
     margin-bottom:1rem; 
     margin-left: 1.5rem;
     margin-right: 1.5rem;
     justify-content: center;
+    
 }
 
 @mixin topTextPlacement {
@@ -71,12 +70,21 @@
 }
 
 @mixin optionA {
+    
     display: flex;
     justify-content: center;
     align-content: flex-end ;
     position:absolute;
-    bottom:5rem; 
-    left:10rem; 
+    bottom:3rem; 
+    left: -3rem;
+
+    @include tablet {
+        left:-1rem; 
+        bottom: 5rem;
+    }
+    @include desktop{
+        left:5rem; 
+    }
 }
 
 @mixin optionB {
@@ -84,20 +92,39 @@
     justify-content: center;
     align-content: flex-end ;
     position:absolute;
-    bottom:5rem; 
-    right:10rem; 
+    bottom:3rem; 
+    right: -3rem;
+
+    @include tablet {
+        right:-1rem; 
+        bottom: 5rem;
+    }
+    @include desktop{
+        right:5rem; 
+    }
 }
 
 @mixin optionDesign{
-    width:80%; 
-    height: auto;
+    height: 8rem;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     padding-top:1rem; 
     padding-bottom: 1rem;
     background-color: pink;
     border-radius: 1rem;
+    width:40%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+    @include tablet{
+        width:50%; 
+        height: auto;
+    }
+    @include desktop{
+        width:80%; 
+    }
+    
     &:hover{
         background-color: aqua;
         transition: ease-in-out, 0.25s;
@@ -112,4 +139,66 @@
         -webkit-animation-iteration-count: infinite;
 
     }
+}
+//mixins for PAGES
+@mixin bodyBlock{
+    display: flex;
+    align-items: center;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      margin-right:auto; 
+      margin-left: auto;
+      border-radius: 0.5rem;
+      background-color: white;
+        width: 95vw;
+        height: 95vh;
+      box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    @include tablet{
+        width: 90vw;
+        height: 80vh;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+}
+
+@mixin gamepage{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    position: relative;
+}
+
+@mixin leftCharacter{
+        max-height: 40vh;
+        position: relative;
+        right:10rem; 
+        @include tablet{
+            max-height: 50vh;
+            right: 20rem;
+            bottom: 0; 
+        }
+        @include desktop{
+            right: 30rem;
+            bottom: 0;
+        }
+}
+
+ @mixin rightCharacter{
+        max-height: 40vh;
+        display: flex;
+        align-items: flex-end;
+        position: relative;
+        left:11rem; 
+        bottom: 0;   
+     @include tablet{
+         max-height: 50vh;
+         left: 20rem;
+         bottom: 0; 
+     }
+     @include desktop{
+         left: 30rem;
+         bottom: 0;
+     } 
 }

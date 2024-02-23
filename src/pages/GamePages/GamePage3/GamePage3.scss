@@ -1,26 +1,18 @@
-@use '../../../styles/partials/globals.scss' as*; 
+@use '../../../styles/partials/globals.scss' as *; 
 @use '../../../styles/partials/mixins.scss' as *; 
 @use '../../../styles/partials/typography.scss' as *; 
 @use '../../../styles/partials/variables' as *; 
 
-.gamePage{
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
-    position: relative;
+.gamePage3{
+   @include gamepage;
+   justify-content: flex-end; 
 
     &__textBox{
         @include topTextPlacement
     }
 
     &__option{
-        @include singleOption; 
-        &--box{
-            display: flex;
-            justify-content: center;
-        }
+        @include singleOption
     }
     &__optionA{
     @include optionA
@@ -44,6 +36,7 @@
             @include leftCharacter
         }
     } 
+
 }
 
 

@@ -1,10 +1,48 @@
 import React from 'react'
 import './GamePage2.scss'; 
+import TextBoxTop from '../../../components/TextBoxTop/TextBoxTop';
+import OptionAButton from '../../../components/OptionAButton/OptionAButton';
+import OptionBButton from '../../../components/OptionBButton/OptionBButton';
+import { useState } from 'react';
+import friendv2 from "../../../assets/images/characters/claw_grl34.png"
+import placeholder from "../../../assets/images/characters/placeholder.png"
+import { Link } from 'react-router-dom';
+
 
 const GamePage2 = () => {
+
+  const [optionA, setOptionA] = useState(
+    { text:"spend $15 of your last $20 to buy cigarettes"}
+   )
+ 
+   const[optionB, setOptionB] = useState(
+     {text:"Ask your friend to spot you and get you a pack"}
+   )
+   const [body,setBody] = useState(
+    {title:"",
+     text:"While in line at the 7/11 you realize that your wallet isn't in your purse anymore! All you have left is a sweaty 20 dollar bill."
+    })
+
   return (
-    <div className='body__block'>
-      
+    <div className='body__block--character gamePage2'>
+     <div className='gamePage2__textBox'>
+        <TextBoxTop body={body}/>
+    </div>
+     <div className='gamePage2__options'>
+       
+          <Link className='gamePage2__optionA' >
+            <OptionAButton optionA={optionA}/>
+          </Link>
+    
+          <Link className='gamePage2__optionB'>
+            <OptionBButton optionB={optionB}/> 
+          </Link>
+  
+      </div>
+      <div className='gamePage2__character'>
+        <img className='gamePage2__character--right fadeIn' alt='bestie' src={friendv2}/> 
+        <img className='gamePage2__character--left fadeIn' alt='gameplayer' src={placeholder}/>
+      </div>
     </div>
   )
 }

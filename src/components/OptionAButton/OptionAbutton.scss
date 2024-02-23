@@ -5,11 +5,16 @@
 
 .option{
    @include optionDesign; 
+   z-index: 1;
 
     &__text{
         text-align: center;
         text-wrap: wrap;
-        font-size: 1.5rem;
+        font-size: 1rem;
+        @include tablet{
+            font-size: 1.5rem;
+        }
+        
     }
 
 }
