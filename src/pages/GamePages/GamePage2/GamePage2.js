@@ -10,12 +10,7 @@ import hand from "../../../assets/images/misc/MuneyGif.gif"
 import { Link } from 'react-router-dom';
 
 
-const GamePage2 = ({cash, updateCash}) => {
-
-  useEffect(()=>{
-      updateCash(cash-15)
-  }, []); 
-
+const GamePage2 = () => {
 
   const [optionA, setOptionA] = useState(
     { text:"spend $15 of your last $20 to buy cigarettes"}
@@ -36,7 +31,7 @@ return (
         <TextBoxTop body={body}/>
     </div>
      <div className='gamePage2__options'>
-          <Link  to={`/page3`} className='gamePage2__optionA' >
+          <Link  to={`/page3a`} className='gamePage2__optionA' >
             <OptionAButton optionA={optionA}/>
           </Link>
     

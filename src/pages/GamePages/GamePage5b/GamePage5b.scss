@@ -8,8 +8,16 @@
 
     &__character{
         display: flex;
-        height: 30rem; 
+        height: 25rem; 
     }
+
+    &__option{
+        @include singleOptionTop
+    }
+
+    &__textBoxBottom{
+        @include textBottomPlacement
+     }
 
     &__text{
         display: flex;

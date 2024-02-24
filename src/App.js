@@ -11,9 +11,11 @@ import GameOver from './pages/GameOver/GameOver';
 import GamePage1 from './pages/GamePages/GamePage1/GamePage1';
 import GamePage2 from './pages/GamePages/GamePage2/GamePage2';
 import GamePage3 from './pages/GamePages/GamePage3/GamePage3';
+import GamePage3a from './pages/GamePages/GamePage3/GamePage3a';
 import GamePage4 from './pages/GamePages/GamePage4/GamePage4';
 import GamePage5a from './pages/GamePages/GamePage5a/GamePage5a';
 import GamePage5b from './pages/GamePages/GamePage5b/GamePage5b';
+import GamePage6a from './pages/GamePages/GamePage6a/GamePage6a';
 
 function App() {
   const [currentCash, setCurrentCash] = useState(20)
@@ -35,9 +37,11 @@ function App() {
           <Route path="/page1" element={<GamePage1/>}/> 
           <Route path="/page2" element={<GamePage2 cash={currentCash} updateCash={cashChange}/>}/>
           <Route path="/page3" element={<GamePage3 cash={currentCash}/>}/> 
+          <Route path="/page3a" element={<GamePage3a cash={currentCash} updateCash={cashChange}/>} />
           <Route path="/page4" element={<GamePage4/>} />
           <Route path="/page5a" element={<GamePage5a/>} /> 
           <Route path="/page5b" element={<GamePage5b/>}/>
+          <Route path="/page6a" element={<GamePage6a cash={currentCash} updateCash={cashChange}/> }/>
       </Routes>
       <Footer/>
       </BrowserRouter>

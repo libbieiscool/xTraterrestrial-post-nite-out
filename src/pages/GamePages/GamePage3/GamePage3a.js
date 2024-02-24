@@ -3,15 +3,18 @@ import './GamePage3.scss';
 import TextBoxTop from '../../../components/TextBoxTop/TextBoxTop';
 import OptionAButton from '../../../components/OptionAButton/OptionAButton';
 import OptionBButton from '../../../components/OptionBButton/OptionBButton';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import friendv3 from "../../../assets/images/characters/claw_grl.gif"
 import placeholder from "../../../assets/images/characters/placeholder.png"
 import { Link } from 'react-router-dom';
 import bouncerGif from "../../../assets/images/misc/greenGuyHoodie.gif"
 
-const GamePage3 = () => {
 
-  
+const GamePage3a = ({cash, updateCash}) => {
+
+    useEffect(()=>{
+        updateCash(cash-15)
+    }, []);
 
     const [optionA, setOptionA] = useState(
         { text:"Accept your fate (poverty)"}
@@ -52,4 +55,4 @@ const GamePage3 = () => {
   )
 }
 
-export default GamePage3
+export default GamePage3a

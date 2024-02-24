@@ -68,6 +68,15 @@
     z-index: 1;
 }
 
+@mixin singleOptionTop{
+    display: flex;
+    justify-content: center;
+    align-content: flex-start ;
+    position:absolute;
+    top:1rem; 
+    z-index: 1;
+}
+
 @mixin optionA {
     
     display: flex;

@@ -2,11 +2,9 @@ import React from 'react';
 import "../GamePage5b/GamePage5b.scss"; 
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
-import TextBoxTop from '../../../components/TextBoxTop/TextBoxTop';
-import OptionAButton from '../../../components/OptionAButton/OptionAButton';
-import OptionBButton from '../../../components/OptionBButton/OptionBButton';
 import TextBoxBottom from '../../../components/TextBoxBottom/TextBoxBottom';
 import friend from "../../../assets/images/characters/claw_grl.gif"
+import SingleOptionButton from '../../../components/SingleOptionButton/SingleOptionButton';
 
 const GamePage5b = () => {
    
@@ -17,22 +15,23 @@ const GamePage5b = () => {
           }
           )
 
+        const [singleOption, setSingleOption]= useState(
+            {text:"Say goodbye, and find Another way home"}
+          )
+
+
   return (
     <div className='body__block--character gamePage5'>
     <div className='gamePage5__textNcharacter'>
-        {/* <div className='gamePage5__text'>
-            <h3> "Sorry babes!"</h3>
-        </div> */}
         <img className='gamePage5__character' src={friend}/>
-        <Link className='gamePage5__text'>
-            <div>
-                <h3> Find Another Way Home</h3>
-            </div>
-        </Link>
+    </div>
+
+    <div className='gamePage5__option'>
+        <SingleOptionButton singleOption={singleOption}/>
     </div>
 
 
-    <div className='gamePage__textBoxBottom'>
+    <div className='gamePage5__textBoxBottom'>
             <TextBoxBottom bottomText={bottomText}/>
     </div>
       

@@ -5,6 +5,7 @@ import { useState } from 'react';
 import TextBoxTop from '../../../components/TextBoxTop/TextBoxTop';
 import OptionAButton from '../../../components/OptionAButton/OptionAButton';
 import OptionBButton from '../../../components/OptionBButton/OptionBButton';
+import sell from '../../../assets/images/background/SELL.gif'
 
 const GamePage5a = () => {
 
@@ -21,17 +22,24 @@ const GamePage5a = () => {
         })
 
   return (
-    <div className='body__block--character gamePage5'>
+    <div className='body__block--character gamePage5a'>
       <div className='gamePage__textBox'>
         <TextBoxTop body={body}/>
       </div>
 
-      <div className='gamePage__options'>
-        <div className='gamePage__optionA'>
-          <OptionAButton optionA={optionA}/>
-        </div>
+      <div className='gamePage5a__img'>
+        <img alt='sellMoreGif' src={sell} className='gamePage5a__img--styling'/> 
+      </div>
+
+      <div className='gamePage5a__options'>
+        <Link to={`/page6a`}>
+            <div className='gamePage5a__optionA'>
+            <OptionAButton optionA={optionA}/>
+            </div>
+        </Link>
+
         <Link to={`/gameover`}>
-            <div className='gamePage__optionB'>
+            <div className='gamePage5a__optionB'>
             <OptionBButton optionB={optionB}/> 
             </div>
         </Link>

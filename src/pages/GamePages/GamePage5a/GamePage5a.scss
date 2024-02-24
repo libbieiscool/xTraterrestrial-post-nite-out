@@ -3,11 +3,10 @@
 @use '../../../styles/partials/typography.scss' as *; 
 @use '../../../styles/partials/variables' as *; 
 
-.gamePage5{
+.gamePage5a{
    @include gamepage;
    justify-content: flex-end; 
-//    background-image: url("../../../assets/images/background/SELL.gif");
-//    background-size: 250px;
+
 
     &__textBox{
         @include topTextPlacement
@@ -28,6 +27,18 @@
        @include textBottomPlacement
     }
 
+    &__img{
+        display: flex;
+       justify-content: center;
+       &--styling{
+        width: 33rem;
+        padding-bottom: 2rem;
+        -webkit-animation: glowing 1500ms infinite;
+        -moz-animation: glowing 1500ms infinite;
+        -o-animation: glowing 1500ms infinite;
+        animation: glowing 1500ms infinite;
+       }
+    }
     &__character{
         display: flex;
         flex-direction: row;    
@@ -41,6 +52,30 @@
 
 }
 
+@-webkit-keyframes glowing {
+    0% {filter: drop-shadow(5px 5px 10px #800000); }
+    50% { filter: drop-shadow(5px 5px 10px #f20202);}
+    100% { filter: drop-shadow(5px 5px 10px #800000);}
+  }
+  
+  @-moz-keyframes glowing {
+    0% {filter: drop-shadow(5px 5px 10px #800000); }
+    50% {filter: drop-shadow(5px 5px 10px #f20202); }
+    100% { filter: drop-shadow(5px 5px 10px #800000); }
+  }
+  
+  @-o-keyframes glowing {
+    0% { filter: drop-shadow(5px 5px 10px #800000);}
+    50% { filter: drop-shadow(5px 5px 10px #f20202);}
+    100% { filter: drop-shadow(5px 5px 10px #800000); }
+  }
+  
+  @keyframes glowing {
+    0% { filter: drop-shadow(5px 5px 10px #800000); }
+    50% {filter: drop-shadow(5px 5px 10px #f20202);}
+    100% { filter: drop-shadow(5px 5px 10px #800000); }
+  }
 
-
-
+//   -webkit-filter: drop-shadow(12px 12px 7px rgba(204, 52, 52, 0.5));
+//   filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.5));
+//   transition: all 0.2s ease;
