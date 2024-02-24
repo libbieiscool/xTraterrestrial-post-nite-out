@@ -1,5 +1,4 @@
 @use './variables.scss' as *;
-
 //screen Breakpoints
 @mixin desktop {
     @media screen and (min-width: $desktop-breakpoint) { 

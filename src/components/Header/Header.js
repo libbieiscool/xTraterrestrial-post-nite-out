@@ -3,9 +3,11 @@ import '../Header/Header.scss';
 import planet from '../../assets/icons/world.png'; 
 import heart from "../../assets/icons/heart.png"; 
 import { NavLink, Link } from 'react-router-dom';
+import { useState } from 'react';
+
+const Header = ({cash}) => {
 
 
-const Header = () => {
   return (
     <nav className='header'>
         <div className='header__list--container'>
@@ -23,8 +25,16 @@ const Header = () => {
                 <img className='header__img header__img--animated' src={heart} />
             </Link>
         </div>
-        <div className='header__worldIcon'>
+        <div className='header__worldCash'>
+
+        <div className='cash'>
+          <h3>$:</h3>
+          <h3>{cash}</h3>
+        </div>
+
+       <div className='header__worldIcon'>
             <img className='header__img' src={planet}/>
+        </div>
         </div>
 
     </nav>

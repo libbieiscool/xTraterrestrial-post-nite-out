@@ -54,6 +54,30 @@
 &__hover:hover{
     color:$light-pink;
 }
+&__worldCash{
+  display: flex;
+  flex-direction: row;
+}
+&__cash{
+  margin-right:1rem; 
+}
+
+.cash{
+  background-color:$white;
+  color: $dark-purple;
+  padding: 0.5rem; 
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+  border: $light-pink 0.5rem solid;
+  margin-right: 1rem;
+
+}
+
+
+
 
 }
 ul{

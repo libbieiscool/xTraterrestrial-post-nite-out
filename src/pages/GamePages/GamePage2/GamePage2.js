@@ -3,14 +3,19 @@ import './GamePage2.scss';
 import TextBoxTop from '../../../components/TextBoxTop/TextBoxTop';
 import OptionAButton from '../../../components/OptionAButton/OptionAButton';
 import OptionBButton from '../../../components/OptionBButton/OptionBButton';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import friendv2 from "../../../assets/images/characters/claw_grl34.png"
 import placeholder from "../../../assets/images/characters/placeholder.png"
 import hand from "../../../assets/images/misc/MuneyGif.gif"
 import { Link } from 'react-router-dom';
 
 
-const GamePage2 = () => {
+const GamePage2 = ({cash, updateCash}) => {
+
+  useEffect(()=>{
+      updateCash(cash-15)
+  }, []); 
+
 
   const [optionA, setOptionA] = useState(
     { text:"spend $15 of your last $20 to buy cigarettes"}
@@ -24,24 +29,25 @@ const GamePage2 = () => {
      text:"While in line at the 7/11 you realize that your wallet isn't in your purse anymore! All you have left is a sweaty 20 dollar bill."
     })
 
-  return (
+return (
+
     <div className='body__block--character gamePage2'>
      <div className='gamePage2__textBox '>
         <TextBoxTop body={body}/>
     </div>
      <div className='gamePage2__options'>
-       
-          <Link to={`/page3`} className='gamePage2__optionA' >
+          <Link  to={`/page3`} className='gamePage2__optionA' >
             <OptionAButton optionA={optionA}/>
           </Link>
     
           <Link to={`/page3`} className='gamePage2__optionB'>
             <OptionBButton optionB={optionB}/> 
           </Link>
-  
       </div>
 
-      <img src={hand} className='gamePage2__character--center' alt="hand" /> 
+      <div className='gamePage2__character'>
+        <img src={hand} className='gamePage2__character--center' alt="hand" /> 
+      </div>
 
       <div className='gamePage2__character'>
         <img className='gamePage2__character--right ' alt='bestie' src={friendv2}/> 

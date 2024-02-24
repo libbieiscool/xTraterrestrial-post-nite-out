@@ -6,6 +6,8 @@
 .gamePage5{
    @include gamepage;
    justify-content: flex-end; 
+//    background-image: url("../../../assets/images/background/SELL.gif");
+//    background-size: 250px;
 
     &__textBox{
         @include topTextPlacement

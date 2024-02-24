@@ -6,20 +6,10 @@ import TextBoxTop from '../../../components/TextBoxTop/TextBoxTop';
 import OptionAButton from '../../../components/OptionAButton/OptionAButton';
 import OptionBButton from '../../../components/OptionBButton/OptionBButton';
 import TextBoxBottom from '../../../components/TextBoxBottom/TextBoxBottom';
-
+import friend from "../../../assets/images/characters/claw_grl.gif"
 
 const GamePage5b = () => {
-    // const [optionA, setOptionA] = useState(
-    //     { text:"Try and sell for $1-3"}
-    //    )
-     
-    //    const[optionB, setOptionB] = useState(
-    //      {text:"Try and sell for $4-5"}
-    //    )
-    //    const [body,setBody] = useState(
-    //     {title:"",
-    //      text:"Bestie informs you that she's just called her own Uber home, her GF is there waiting for her, and the two live on the opposite side of town.. You'll have to make it home on your own.  "
-    //     })
+   
         const[bottomText, setBottomtext]=useState(
             {nameLeft:"", 
             nameRight:"bestie", 
@@ -29,21 +19,22 @@ const GamePage5b = () => {
 
   return (
     <div className='body__block--character gamePage5'>
-      {/* <div className='gamePage__textBox'>
-        <TextBoxTop body={body}/>
-      </div>
+    <div className='gamePage5__textNcharacter'>
+        {/* <div className='gamePage5__text'>
+            <h3> "Sorry babes!"</h3>
+        </div> */}
+        <img className='gamePage5__character' src={friend}/>
+        <Link className='gamePage5__text'>
+            <div>
+                <h3> Find Another Way Home</h3>
+            </div>
+        </Link>
+    </div>
 
-      <div className='gamePage__options'>
-        <div className='gamePage__optionA'>
-          <OptionAButton optionA={optionA}/>
-        </div>
-        <div className='gamePage__optionB'>
-          <OptionBButton optionB={optionB}/> 
-        </div>
-      </div> */}
-      <div className='gamePage__textBoxBottom'>
-      <TextBoxBottom bottomText={bottomText}/>
-        </div>
+
+    <div className='gamePage__textBoxBottom'>
+            <TextBoxBottom bottomText={bottomText}/>
+    </div>
       
     </div>
   )

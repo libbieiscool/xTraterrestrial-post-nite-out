@@ -1,5 +1,6 @@
 import './App.scss';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { useState } from 'react';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import Welcome from './pages/Welcome/Welcome';
@@ -15,10 +16,16 @@ import GamePage5a from './pages/GamePages/GamePage5a/GamePage5a';
 import GamePage5b from './pages/GamePages/GamePage5b/GamePage5b';
 
 function App() {
+  const [currentCash, setCurrentCash] = useState(20)
+
+  function cashChange(data){
+    setCurrentCash(data)
+  }
+
   return (
     <div className="app">
       <BrowserRouter>
-      <Header/>
+      <Header cash={currentCash}/>
       <Routes>
           <Route path="/" element={<Welcome/>}/>
           <Route path="/about" element={<About/>}/> 
@@ -26,8 +33,8 @@ function App() {
           <Route path="/gameplay" element={<Gameplay/>} /> 
           <Route path="/gameover" element={<GameOver/> } />
           <Route path="/page1" element={<GamePage1/>}/> 
-          <Route path="/page2" element={<GamePage2/>}/>
-          <Route path="/page3" element={<GamePage3/>}/> 
+          <Route path="/page2" element={<GamePage2 cash={currentCash} updateCash={cashChange}/>}/>
+          <Route path="/page3" element={<GamePage3 cash={currentCash}/>}/> 
           <Route path="/page4" element={<GamePage4/>} />
           <Route path="/page5a" element={<GamePage5a/>} /> 
           <Route path="/page5b" element={<GamePage5b/>}/>
