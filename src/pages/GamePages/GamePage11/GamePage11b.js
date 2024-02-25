@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 const GamePage11b = () => {
     const [body,setBody] = useState(
         {title:"",
-         text:"In freaky unison they say  'My Fiance and I saw you from across the bar and really loved your vibe... you see we're a non-monogamous ___ couple looking for a third... we wanted to know if you wanted to know if you wanted to join us for a night of personal discovery?'"
+         text:"In freaky unison they say  'My Fiance and I saw you from across the bar and we really loved your vibe... you see we're a non-monogamous ___ couple looking for a third... we wanted to know if you wanted to join us for a night of personal discovery?'"
         })
     
     const [optionA, setOptionA] = useState(

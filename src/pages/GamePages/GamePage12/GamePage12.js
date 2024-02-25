@@ -8,12 +8,12 @@ import TextBoxTop from '../../../components/TextBoxTop/TextBoxTop';
 
 const GamePage12 = () => {
     const [singleOption, setSingleOption]= useState(
-        {text:"solemnly return on your heros journey... This moment will likely haunt you for the rest of your life"}
+        {text:"Solemnly return on your heros journey... This moment will likely haunt you for the rest of your life"}
       )
 
       const [body,setBody] = useState(
         {title:"",
-         text:"As you walk to the couples neon green 2012 space Kia Soul, a blinding light comes from the sky DIRECTLY hitting the couple. In unison they shout ''NOO'' ... sadly your polyamourous friends have been CRUSHED by a rogue meteor. "
+         text:"As you walk to the couples neon green 2012 space Kia Soul, a blinding light comes from the sky DIRECTLY hitting the couple. In unison they shout ''NOO'' Sadly your polyamourous friends have been CRUSHED by a rogue meteor. "
         })
 
   return (

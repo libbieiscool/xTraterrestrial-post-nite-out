@@ -1,0 +1,11 @@
+@use '../../../styles/partials/globals.scss' as *; 
+@use '../../../styles/partials/mixins.scss' as *; 
+@use '../../../styles/partials/typography.scss' as *; 
+@use '../../../styles/partials/variables' as *; 
+
+.gamePage19{
+    @include gamepage;
+    justify-content: flex-end; 
+ 
+    
+ }

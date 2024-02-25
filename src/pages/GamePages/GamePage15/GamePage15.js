@@ -30,9 +30,11 @@ const GamePage15 = () => {
           <OptionAButton optionA={optionA}/>
         </div>
 
-        <div className='gamePage15__optionB'>
-          <OptionBButton optionB={optionB}/> 
-        </div>
+        <Link to={`/page19`} >
+          <div className='gamePage15__optionB'>
+            <OptionBButton optionB={optionB}/> 
+          </div>
+        </Link>
       
     </div>
 </div>

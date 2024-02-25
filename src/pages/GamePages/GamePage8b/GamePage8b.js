@@ -14,11 +14,11 @@ const GamePage8b = () => {
         })
     
       const [optionA, setOptionA] = useState(
-       { text:"avoid making eye-contact and exit quickly"}
+       { text:"Avoid making eye-contact and exit quickly"}
       )
     
       const[optionB, setOptionB] = useState(
-        {text:"strike up a conversation and see where it goes"}
+        {text:"Strike up a conversation and see where it goes"}
       )
 
   return (
@@ -29,10 +29,12 @@ const GamePage8b = () => {
         </div>
 
         <div className='gamePage8__options'>
+          <Link to={`/page13`}>
+              <div className='gamePage8__optionA'>
+                <OptionAButton optionA={optionA}/>
+              </div>
+          </Link>
 
-            <div className='gamePage8__optionA'>
-            <OptionAButton optionA={optionA}/>
-            </div>
             <Link to={`/page9a`}>
                 <div className='gamePage8__optionB'>
                     <OptionBButton optionB={optionB}/> 

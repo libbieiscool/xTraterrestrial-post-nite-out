@@ -1,26 +1,22 @@
 import React from 'react'
-import "../GamePage18/GamePage18.scss"
+import "../GamePage18/GamePage18.scss"; 
+import "../../GameOver/GameOver.scss"; 
 import { useState } from 'react'; 
-import TextBoxTop from '../../../components/TextBoxTop/TextBoxTop';
-import OptionAButton from '../../../components/OptionAButton/OptionAButton';
-import OptionBButton from '../../../components/OptionBButton/OptionBButton';
+import GameOver from '../../GameOver/GameOver';
 import { Link } from 'react-router-dom';
 
 const GamePage18 = () => {
-    const [body,setBody] = useState(
-        {title:"",
-         text:"sdfasdf"
-        })
-    
-    const [optionA, setOptionA] = useState(
-       { text:"sdgfsdfg"}
-      )
-    
-    const[optionB, setOptionB] = useState(
-        {text:"ffasdads"}
-      )
+  
   return (
-    <div>
+    <div className='gameOver body__block'>
+   
+     <GameOver/>
+ 
+     <p className='gameOver__subtext'> You joined the communist party in hopes of wooing the handsome leader, but even YOU were not immune to his behaviour of being a Serial Cheater... </p>
+    
+    <Link to={`/page13`}>
+     <button className='gameOver__button'>Try Again</button>
+    </Link>
       
     </div>
   )

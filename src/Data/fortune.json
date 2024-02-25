@@ -1,0 +1,25 @@
+{
+    "fortunes": [
+      {"id": 1, "fortune": "A journey of a thousand miles begins with a single step."},
+      {"id": 2, "fortune": "Good things come to those who wait, but better things come to those who work for it."},
+      {"id": 3, "fortune": "Your kindness will be repaid in unexpected ways."},
+      {"id": 4, "fortune": "The best is yet to come."},
+      {"id": 5, "fortune": "Opportunities are like sunrises. If you wait too long, you miss them."},
+      {"id": 6, "fortune": "A smile is the universal language of kindness."},
+      {"id": 7, "fortune": "Believe in yourself, and you will be unstoppable."},
+      {"id": 8, "fortune": "Success is not final, failure is not fatal: It is the courage to continue that counts."},
+      {"id": 9, "fortune": "You will find happiness in the most unexpected places."},
+      {"id": 10, "fortune": "Every exit is an entry somewhere else."},
+      {"id": 11, "fortune": "The harder you work, the luckier you get."},
+      {"id": 12, "fortune": "Your future is as bright as your faith."},
+      {"id": 13, "fortune": "Do not wait for the perfect moment, take the moment and make it perfect."},
+      {"id": 14, "fortune": "You are never too old to set another goal or to dream a new dream."},
+      {"id": 15, "fortune": "Fortune favors the bold."},
+      {"id": 16, "fortune": "A problem shared is a problem halved."},
+      {"id": 17, "fortune": "The only way to do great work is to love what you do."},
+      {"id": 18, "fortune": "Your life does not get better by chance, it gets better by change."},
+      {"id": 19, "fortune": "You are stronger than you think."},
+      {"id": 20, "fortune": "In the middle of difficulty lies opportunity."}
+    ]
+  }
+  
