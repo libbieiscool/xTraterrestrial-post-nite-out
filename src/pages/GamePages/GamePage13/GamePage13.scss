@@ -1,0 +1,40 @@
+@use '../../../styles/partials/globals.scss' as *; 
+@use '../../../styles/partials/mixins.scss' as *; 
+@use '../../../styles/partials/typography.scss' as *; 
+@use '../../../styles/partials/variables' as *; 
+
+.gamePage13{
+    @include gamepage;
+    justify-content: flex-end; 
+ 
+     &__textBox{
+         @include topTextPlacement
+     }
+ 
+     &__option{
+         @include singleOptionTop
+     }
+     &__optionA{
+     @include optionA
+     }
+ 
+     &__optionB{
+     @include optionB
+     }
+ 
+     &__textBoxBottom{
+        @include textBottomPlacement
+     }
+ 
+     &__character{
+         display: flex;
+         flex-direction: row;    
+         &--right{
+             @include rightCharacter
+         }
+         &--left{
+             @include leftCharacter
+         }
+     } 
+    
+ }
