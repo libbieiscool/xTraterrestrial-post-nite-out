@@ -7,17 +7,18 @@ import OptionBButton from '../../../components/OptionBButton/OptionBButton';
 import { Link } from 'react-router-dom';
 //GARBAGE CAN
 const GamePage8b = () => {
+
     const [body,setBody] = useState(
         {title:"",
-         text:"text text tetx tet "
+         text:"After a relatively brutal puking session you lift your head to see a man leaning on the side of the building and smoking a cig... suddenly you realize its Sid: an old flame/ex-situationship. In your time together you had some of the best Alien sex you've ever had ... but the impact this situationship had on your confidence was detrimental..."
         })
     
       const [optionA, setOptionA] = useState(
-       { text:"this is my test text yippee "}
+       { text:"avoid making eye-contact and exit quickly"}
       )
     
       const[optionB, setOptionB] = useState(
-        {text:"this is my test text OPTION B "}
+        {text:"strike up a conversation and see where it goes"}
       )
 
   return (
@@ -28,12 +29,15 @@ const GamePage8b = () => {
         </div>
 
         <div className='gamePage8__options'>
+
             <div className='gamePage8__optionA'>
             <OptionAButton optionA={optionA}/>
             </div>
-            <div className='gamePage8__optionB'>
-            <OptionBButton optionB={optionB}/> 
-            </div>
+            <Link to={`/page9a`}>
+                <div className='gamePage8__optionB'>
+                    <OptionBButton optionB={optionB}/> 
+                </div>
+            </Link>
         </div>
 
     </div>

@@ -3,7 +3,7 @@
 @use '../../../styles/partials/typography.scss' as *; 
 @use '../../../styles/partials/variables' as *; 
 
-.gamePage8{
+.gamePage9{
     @include gamepage;
     justify-content: flex-end; 
  
@@ -56,5 +56,7 @@
          &--left{
              height: 20rem;
          }
-     }   
+     } 
+ 
+    
  }

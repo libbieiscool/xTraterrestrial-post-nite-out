@@ -10,33 +10,35 @@ const GamePage8a = () => {
 
     const [body,setBody] = useState(
         {title:"",
-         text:"text text tetx tet "
+         text:"after an impressive and swift puking session, you put yourself back together and look over to see the most beautiful and non-chalant woman you've ever seen. the two of you make eye contact and she approaches you."
         })
     
     const [optionA, setOptionA] = useState(
-       { text:"this is my test text yippee "}
+       { text:"EDIT WHAT THIS ONE IS"}
       )
     
     const[optionB, setOptionB] = useState(
-        {text:"this is my test text OPTION B "}
+        {text:"you politely decline, and continue your journey"}
       )
 
 
   return (
     <div className='body__block--character gamePage7'>
     
-    <div className='gamePage8__textBox'>
-         <TextBoxTop body={body}/>
-    </div>
+        <div className='gamePage8__textBox'>
+            <TextBoxTop body={body}/>
+        </div>
 
-    <div className='gamePage8__options'>
-        <div className='gamePage8__optionA'>
-        <OptionAButton optionA={optionA}/>
+        <div className='gamePage8__options'>
+
+            <div className='gamePage8__optionA'>
+            <OptionAButton optionA={optionA}/>
+            </div>
+            
+            <div className='gamePage8__optionB'>
+            <OptionBButton optionB={optionB}/> 
+            </div>
         </div>
-        <div className='gamePage8__optionB'>
-        <OptionBButton optionB={optionB}/> 
-        </div>
-    </div>
 
 </div>
   )
