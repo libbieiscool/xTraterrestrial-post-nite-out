@@ -5,6 +5,7 @@
 
 .gamePage5{
     @include gamepage;
+    display: flex;
 
     &__character{
         display: flex;

@@ -16,6 +16,7 @@ import GamePage4 from './pages/GamePages/GamePage4/GamePage4';
 import GamePage5a from './pages/GamePages/GamePage5a/GamePage5a';
 import GamePage5b from './pages/GamePages/GamePage5b/GamePage5b';
 import GamePage6a from './pages/GamePages/GamePage6a/GamePage6a';
+import GamePage6b from './pages/GamePages/GamePage6b/GamePage6b';
 
 function App() {
   const [currentCash, setCurrentCash] = useState(20)
@@ -42,6 +43,10 @@ function App() {
           <Route path="/page5a" element={<GamePage5a/>} /> 
           <Route path="/page5b" element={<GamePage5b/>}/>
           <Route path="/page6a" element={<GamePage6a cash={currentCash} updateCash={cashChange}/> }/>
+          <Route path="/page6b" element={<GamePage6b/>} /> 
+
+
+
       </Routes>
       <Footer/>
       </BrowserRouter>

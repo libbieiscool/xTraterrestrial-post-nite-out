@@ -22,18 +22,21 @@ const GamePage5b = () => {
 
   return (
     <div className='body__block--character gamePage5'>
-    <div className='gamePage5__textNcharacter'>
-        <img className='gamePage5__character' src={friend}/>
-    </div>
 
-    <div className='gamePage5__option'>
-        <SingleOptionButton singleOption={singleOption}/>
-    </div>
+        <Link to={`/page6b`} className='gamePage5__option'>
+
+                <SingleOptionButton singleOption={singleOption}/>
+            
+        </Link>
+
+        <div className='gamePage5__textNcharacter'>
+            <img className='gamePage5__character' src={friend}/>
+        </div>
 
 
-    <div className='gamePage5__textBoxBottom'>
-            <TextBoxBottom bottomText={bottomText}/>
-    </div>
+        <div className='gamePage5__textBoxBottom'>
+                <TextBoxBottom bottomText={bottomText}/>
+        </div>
       
     </div>
   )

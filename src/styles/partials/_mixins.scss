@@ -71,7 +71,7 @@
 @mixin singleOptionTop{
     display: flex;
     justify-content: center;
-    align-content: flex-start ;
+    align-content: center ;
     position:absolute;
     top:1rem; 
     z-index: 1;
