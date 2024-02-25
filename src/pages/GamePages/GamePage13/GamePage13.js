@@ -26,13 +26,18 @@ const GamePage13 = () => {
         </div>
 
         <div className='gamePage__options'>
-            <div className='gamePage__optionA'>
-                <OptionAButton optionA={optionA}/>
-            </div>
+            <Link to={`/page15`} >
+                <div className='gamePage__optionA'>
+                    <OptionAButton optionA={optionA}/>
+                </div>
+            </Link>
 
-            <div className='gamePage__optionB'>
-                <OptionBButton optionB={optionB}/> 
-            </div>
+            <Link to={`/page14`}>
+                <div className='gamePage__optionB'>
+                    <OptionBButton optionB={optionB}/> 
+                </div>
+            </Link>
+
       </div>
       
     </div>

@@ -28,6 +28,9 @@ import GamePage11 from './pages/GamePages/GamePage11/GamePage11';
 import GamePage11b from './pages/GamePages/GamePage11/GamePage11b';
 import GamePage12 from './pages/GamePages/GamePage12/GamePage12';
 import GamePage13 from './pages/GamePages/GamePage13/GamePage13';
+import GamePage14 from './pages/GamePages/GamePage14/GamePage14';
+import GamePage15 from './pages/GamePages/GamePage15/GamePage15';
+import GamePage16 from './pages/GamePages/GamePage16/GamePage16';
 
 function App() {
   const [currentCash, setCurrentCash] = useState(20)
@@ -66,6 +69,9 @@ function App() {
           <Route path="/page11b" element={<GamePage11b/>} />
           <Route path="/page12" element={<GamePage12/>}/>
           <Route path="/page13" element={<GamePage13/>} />
+          <Route path="/page14" element={<GamePage14/>} />
+          <Route path="/page15" element={<GamePage15/>} />
+          <Route path="/page16" element={<GamePage16/>} />
 
       </Routes>
       <Footer/>
