@@ -1,0 +1,62 @@
+@use '../../../styles/partials/globals.scss' as *; 
+@use '../../../styles/partials/mixins.scss' as *; 
+@use '../../../styles/partials/typography.scss' as *; 
+@use '../../../styles/partials/variables' as *; 
+
+.gamePage7{
+    @include gamepage;
+    justify-content: flex-end; 
+ 
+     &__textBox{
+         @include topTextPlacement
+     }
+ 
+     &__option{
+         @include singleOptionTop
+     }
+     &__optionA{
+     @include optionA
+     }
+ 
+     &__optionB{
+     @include optionB
+     }
+ 
+     &__textBoxBottom{
+        @include textBottomPlacement
+     }
+ 
+     &__character{
+         display: flex;
+         flex-direction: row;    
+         &--right{
+             @include rightCharacter
+         }
+         &--left{
+             @include leftCharacter
+         }
+     } 
+ 
+     &__characters{
+         display: flex;
+         flex-direction: row; 
+        
+
+         &--right{
+             height: 20rem;
+         }
+         &--centre{
+             height: 20rem;
+             display: flex;
+             @include desktop{
+                 padding-left: 5rem;
+                 padding-right: 5rem;
+             }
+         }
+         &--left{
+             height: 20rem;
+         }
+     } 
+ 
+    
+ }

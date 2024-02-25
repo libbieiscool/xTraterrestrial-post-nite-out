@@ -38,7 +38,7 @@ const GamePage5a = () => {
             </div>
         </Link>
 
-        <Link to={`/gameover`}>
+        <Link to={`/page6c`}>
             <div className='gamePage5a__optionB'>
             <OptionBButton optionB={optionB}/> 
             </div>

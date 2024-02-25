@@ -6,7 +6,7 @@ import fire from '../../assets/images/background/fire.png';
 
 const GameOver = () => {
   return (
-    <div className='gameOver body__block'>
+    <div className='gameOver '>
      
      <img className='gameOver__img' alt="game over text" src={gameOver} /> 
      
@@ -15,8 +15,6 @@ const GameOver = () => {
         <img className='gameOver__fire' alt="fire" src={fire}/> 
         <img className='gameOver__fire' alt="fire" src={fire}/> 
      </div>
-
-     <p>Better Luck Next time</p>
     </div>
 
   )

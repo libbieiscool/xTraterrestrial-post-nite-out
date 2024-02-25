@@ -6,8 +6,12 @@
 .gameOver{
 display: flex;
 flex-direction: column;
+justify-content: center;
+align-items: center;
 &__img{
-    height: 12rem;
+    justify-content: center;
+    width: 17rem;
+    padding-top: 1rem;
 }
 &__fire{
     height:10rem; 
@@ -15,6 +19,29 @@ flex-direction: column;
     animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
+}
+&__subtext{
+  font-size: 1.5rem;
+  width: 60%;
+  text-align: center;
+  padding-top:1.5rem; 
+}
+&__button{
+  border:none; 
+  background-color: $dark-purple;
+  color: $white;
+  font-family: "Terminal" ;
+  font-size: 1.5rem;
+  padding-left:0.5rem;
+  padding-right:0.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  border-radius: 0.5rem;
+  &:hover{
+    background-color: $light-purple;
+  }
+
 }
 @keyframes grow {
     0% {

@@ -5,7 +5,7 @@ import TextBoxBottom from '../../../components/TextBoxBottom/TextBoxBottom';
 import OptionAButton from '../../../components/OptionAButton/OptionAButton';
 import OptionBButton from '../../../components/OptionBButton/OptionBButton';
 import TextBoxTop from '../../../components/TextBoxTop/TextBoxTop';
-
+import { Link } from 'react-router-dom';
 
 const GamePage6a = ({cash, updateCash}) => {
 
@@ -35,12 +35,16 @@ const GamePage6a = ({cash, updateCash}) => {
     </div>
 
     <div className='gamePage6a__options'>
-        <div className='gamePage6a__optionA'>
-          <OptionAButton optionA={optionA}/>
-        </div>
-        <div className='gamePage6a__optionB'>
-          <OptionBButton optionB={optionB}/> 
-        </div>
+        <Link to={`/page7a`}>
+            <div className='gamePage6a__optionA'>
+                <OptionAButton optionA={optionA}/>
+            </div>
+        </Link>
+        <Link to={`/page7b`}>
+            <div className='gamePage6a__optionB'>
+                <OptionBButton optionB={optionB}/> 
+            </div>
+        </Link>
     </div>
 
     </div>
