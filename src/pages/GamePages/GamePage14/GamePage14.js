@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 const GamePage14 = () => {
     const [body,setBody] = useState(
         {title:"",
-         text:"You start walking  down this dark alley, you've walked this path a thousand times granted, it was in the light of day, but you're a big girl and can get from point A to point B, maybe you just need to make yourself look bigger and walk with a different kind of swagger than you usually do. Suddenly you see a figure up in the nearby distance and the two of you make eye contact.  "
+         text:"You start walking  down this dark alley, you've walked this path a thousand times. Granted, it was in the light of day, but you're a big girl and can get from point A to point B. Maybe you just need to make yourself look bigger and walk with a different kind of swagger than you usually do. Suddenly you see a figure up in the nearby distance and the two of you make eye contact.  "
         })
     const [optionA, setOptionA] = useState(
             { text:"run up to the figure... kick him, and run away"}

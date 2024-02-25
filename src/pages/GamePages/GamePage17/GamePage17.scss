@@ -1,0 +1,19 @@
+@use '../../../styles/partials/globals.scss' as *; 
+@use '../../../styles/partials/mixins.scss' as *; 
+@use '../../../styles/partials/typography.scss' as *; 
+@use '../../../styles/partials/variables' as *; 
+
+.gamePage17{
+    @include gamepage;
+    justify-content: center; 
+
+    &__text{
+        padding-left: 2rem;
+        padding-right:2rem; 
+        text-align: center;
+    }
+
+ 
+   
+    
+ }

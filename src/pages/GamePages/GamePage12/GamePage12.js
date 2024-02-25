@@ -8,7 +8,7 @@ import TextBoxTop from '../../../components/TextBoxTop/TextBoxTop';
 
 const GamePage12 = () => {
     const [singleOption, setSingleOption]= useState(
-        {text:"solemnly return on your heros journey home... its probably about time you get back anyways"}
+        {text:"solemnly return on your heros journey... This moment will likely haunt you for the rest of your life"}
       )
 
       const [body,setBody] = useState(

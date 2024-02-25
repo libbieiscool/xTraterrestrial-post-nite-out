@@ -34,12 +34,12 @@ const GamePage7a = ({cash, updateCash}) => {
     </div>
 
     <div className='gamePage7__options'>
-        <Link to={`/page8a`}>
+        <Link to={`/page8b`}>
             <div className='gamePage7__optionA'>
                 <OptionAButton optionA={optionA}/>
             </div>
         </Link>
-        <Link to={`/page8b`}>
+        <Link to={`/page8a`}>
             <div className='gamePage7__optionB'>
                 <OptionBButton optionB={optionB}/> 
             </div>

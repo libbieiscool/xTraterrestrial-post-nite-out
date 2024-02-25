@@ -9,7 +9,7 @@ import OptionBButton from '../../../components/OptionBButton/OptionBButton';
 const GamePage4 = () => {
 
     const [optionA, setOptionA] = useState(
-        { text:"Embrace your entrepreneurial side and sell some cigarettes to fellow party-goers"}
+        { text:"Embrace your entrepreneurial side and sell cigarettes to fellow party-goers"}
        )
      
        const[optionB, setOptionB] = useState(

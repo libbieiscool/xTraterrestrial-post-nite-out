@@ -5,7 +5,7 @@ import TextBoxTop from '../../../components/TextBoxTop/TextBoxTop';
 import OptionAButton from '../../../components/OptionAButton/OptionAButton';
 import OptionBButton from '../../../components/OptionBButton/OptionBButton';
 import { Link } from 'react-router-dom';
-//GARBAGE CAN
+//SID PAGE
 const GamePage8b = () => {
 
     const [body,setBody] = useState(

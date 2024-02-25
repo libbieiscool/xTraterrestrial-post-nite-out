@@ -10,15 +10,15 @@ const GamePage8a = () => {
 
     const [body,setBody] = useState(
         {title:"",
-         text:"after an impressive and swift puking session, you put yourself back together and look over to see the most beautiful and non-chalant woman you've ever seen. the two of you make eye contact and she approaches you."
+         text:"After an impressive and swift puking session, you put yourself back together and look over to see the most beautiful woman you've ever seen aproaching you. You've followed each other on IG for a while, but never met in real life. She asks if she knows you from somewhere and the two of you start talking."
         })
     
     const [optionA, setOptionA] = useState(
-       { text:"EDIT WHAT THIS ONE IS"}
+       { text:"Keep talking with her, maybe she didnt even notice you were puking two min ago and will think you're cool."}
       )
     
     const[optionB, setOptionB] = useState(
-        {text:"you politely decline, and continue your journey"}
+        {text:"Exit the conversation, you should never meet your idols and you're trying to keep it this way."}
       )
 
 
@@ -31,10 +31,13 @@ const GamePage8a = () => {
 
         <div className='gamePage8__options'>
 
-            <div className='gamePage8__optionA'>
-            <OptionAButton optionA={optionA}/>
-            </div>
-            <Link to={`/page13`}>
+            <Link to={`/page17`} >
+                <div className='gamePage8__optionA'>
+                    <OptionAButton optionA={optionA}/>
+                </div>
+            </Link>
+
+            <Link to={`/page11`}>
                 <div className='gamePage8__optionB'>
                     <OptionBButton optionB={optionB}/> 
                 </div>
