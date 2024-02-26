@@ -6,14 +6,16 @@
 .gamePage7{
     @include gamepage;
     justify-content: flex-end; 
+    background-color: green;
+    background-image: url("../../../assets/images/misc/swirl.gif");
+    background-position: center;
+    background-size: 80%;
  
      &__textBox{
          @include topTextPlacement
      }
  
-     &__option{
-         @include singleOptionTop
-     }
+   
      &__optionA{
      @include optionA
      }
@@ -22,13 +24,14 @@
      @include optionB
      }
  
-     &__textBoxBottom{
-        @include textBottomPlacement
-     }
+     
  
      &__character{
          display: flex;
-         flex-direction: row;    
+         flex-direction: row;   
+         &--grl{
+            height: 23rem;
+         } 
          &--right{
              @include rightCharacter
          }

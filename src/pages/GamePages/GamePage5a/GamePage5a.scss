@@ -6,6 +6,8 @@
 .gamePage5a{
    @include gamepage;
    justify-content: flex-end; 
+   background: radial-gradient(circle, rgba(173,255,138,1) 0%, rgba(3,140,0,1) 100%);
+
 
 
     &__textBox{

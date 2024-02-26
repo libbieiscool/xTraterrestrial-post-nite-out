@@ -6,6 +6,8 @@
 .gamePage4{
    @include gamepage;
    justify-content: flex-end; 
+   background: linear-gradient(0deg, rgba(255,183,38,1) 0%, rgba(255,255,255,1) 51%);
+
 
     &__textBox{
         @include topTextPlacement
@@ -29,6 +31,8 @@
     &__character{
         display: flex;
         flex-direction: row;    
+        justify-content: center;
+        height: 23rem;
         &--right{
             @include rightCharacter
         }

@@ -5,24 +5,22 @@
 
 .gamePage2{
    @include gamepage; 
+   background-image: url("../../../assets/images/background/store2.png");
+   background-repeat: no-repeat;
+   background-size: 100%;
+ 
+
 
     &__textBox{
         @include topTextPlacement
     }
 
-    &__option{
-        @include singleOption
-    }
     &__optionA{
     @include optionA
     }
 
     &__optionB{
     @include optionB
-    }
-
-    &__textBoxBottom{
-       @include textBottomPlacement
     }
 
     &__character{

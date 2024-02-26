@@ -31,10 +31,11 @@ const Header = ({cash}) => {
           <h3>$:</h3>
           <h3>{cash}</h3>
         </div>
-
-       <div className='header__worldIcon'>
-            <img className='header__img' src={planet}/>
-        </div>
+        <Link to={`https://open.spotify.com/playlist/6n3xt97Oha8gAL1T1KODUP?si=0c636d94e9d74b11`}>
+        <div className='header__worldIcon'>
+              <img className='header__img' src={planet}/>
+          </div>
+        </Link>
         </div>
 
     </nav>

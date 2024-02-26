@@ -6,6 +6,10 @@
 .gamePage3{
    @include gamepage;
    justify-content: flex-end; 
+   background-image: url("../../../assets/images/background/clurb.jpg");
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: 100%;
 
     &__textBox{
         @include topTextPlacement

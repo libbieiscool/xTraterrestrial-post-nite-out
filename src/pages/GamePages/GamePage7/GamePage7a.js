@@ -5,6 +5,8 @@ import TextBoxTop from '../../../components/TextBoxTop/TextBoxTop';
 import OptionAButton from '../../../components/OptionAButton/OptionAButton';
 import OptionBButton from '../../../components/OptionBButton/OptionBButton';
 import { Link } from 'react-router-dom';
+import girl from "../../../assets/images/characters/gorl.png"
+
 //PIZZA WORLD
 
 const GamePage7a = ({cash, updateCash}) => {
@@ -23,7 +25,7 @@ const GamePage7a = ({cash, updateCash}) => {
 
     const [body,setBody] = useState(
         {title:"",
-         text:"The pizza gods smiled on you today and you were able to get a slice for only $3. If lady luck is on your side you might just get home after all. Suddenly, you get this creeping feeling you've felt many times on evenings like these... you need to vomit. "
+         text:"The pizza gods smiled on you today and you were able to get a slice for only $3. If lady luck is on your side you might just get home after all. Suddenly, you get this creeping feeling you've felt many times on evenings like these... YOU NEED TO VOMIT! "
         })
 
   return (
@@ -44,6 +46,10 @@ const GamePage7a = ({cash, updateCash}) => {
                 <OptionBButton optionB={optionB}/> 
             </div>
         </Link>
+    </div>
+
+    <div>
+        <img className='gamePage7__character--grl' alt='main character' src={girl}/>
     </div>
 
     </div>

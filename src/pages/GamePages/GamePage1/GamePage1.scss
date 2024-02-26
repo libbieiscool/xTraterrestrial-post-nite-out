@@ -10,6 +10,7 @@
     align-content: center;
     justify-content: center;
     position: relative;
+    background: linear-gradient(0deg, rgba(159,134,192,1) 0%, rgba(255,255,255,1) 51%);
 
     &__textBox{
         @include topTextPlacement
@@ -22,17 +23,7 @@
             justify-content: center;
         }
     }
-    &__optionA{
-    @include optionA
-    }
-
-    &__optionB{
-    @include optionB
-    }
-
-    &__textBoxBottom{
-       @include textBottomPlacement
-    }
+  
 
     &__character{
         display: flex;

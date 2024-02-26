@@ -10,10 +10,10 @@
     justify-content: center;
     border-radius: 0.5rem;
     flex-direction: column;
-    background-color: $white;
     width: 90%;
     height: 90%; 
 	padding-bottom: 3rem;
+	background: radial-gradient(circle, rgba(247,241,255,1) 59%, rgba(159,134,192,1) 100%);
 
     &__button{
         height: 10rem;
@@ -26,10 +26,29 @@
     }
 
     &__title{
-        font-family: "Zara";
-        font-size: 6rem;
-        font-weight: 400;
+        font-family: "Terminal";
+        font-size: 5rem;
+        font-weight: 600;
+		color: $darker-purple;
     }
+	&__group{
+		display: flex;
+		&--top{
+			flex-direction: row;
+			display: flex;
+		}
+		&--text{
+			padding-top: 1rem;
+			padding-left: 1rem;
+			padding-right: 1rem;
+			padding-bottom: 1rem;
+		}
+	}
+	&__disco{
+		height: 7rem;
+	}
+
+	
 }
 
 .floating{
@@ -65,4 +84,19 @@
 	100% {
 		-webkit-transform: translateY(0%);
 	}			
+}
+
+.playbutton{
+	position: relative;
+	&__img{
+		position: relative;
+	}
+	&__text{
+		position: absolute;
+		z-index: 2;
+		top:5rem; 
+		left:3rem
+	}
+
+
 }

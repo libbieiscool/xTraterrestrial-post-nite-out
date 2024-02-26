@@ -6,6 +6,7 @@
 .gamePage5{
     @include gamepage;
     display: flex;
+    background: linear-gradient(0deg, rgba(255,183,38,1) 0%, rgba(255,255,255,1) 51%);
 
     &__character{
         display: flex;

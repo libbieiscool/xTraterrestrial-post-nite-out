@@ -1,8 +1,7 @@
 import React from 'react'; 
 import './GamePage1.scss';  
-import friend from '../../../assets/images/characters/claw grl.png'
-import friendv2 from "../../../assets/images/characters/claw_grl34.png"
-import placeholder from "../../../assets/images/characters/placeholder.png"
+import friendv2 from "../../../assets/images/characters/claw_grl.gif"
+import girl from "../../../assets/images/characters/gorl.png"
 import { useState } from 'react';
 import TextBoxTop from '../../../components/TextBoxTop/TextBoxTop';
 import SingleOptionButton from '../../../components/SingleOptionButton/SingleOptionButton';
@@ -33,7 +32,7 @@ const GamePage1 = () => {
       </Link>
       <div className='gamePage__character'>
         <img className='gamePage__character--right fadeIn' alt='bestie' src={friendv2}/> 
-        <img className='gamePage__character--left fadeIn' alt='gameplayer' src={placeholder}/>
+        <img className='gamePage__character--left fadeIn' alt='gameplayer' src={girl}/>
       </div>
 
     </div>

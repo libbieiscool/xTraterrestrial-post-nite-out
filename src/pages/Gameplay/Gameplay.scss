@@ -7,14 +7,16 @@
     display: flex;
     flex-direction: column ;
     padding-bottom: 3rem;
+    background-color: $white;
 
 
     &__header{
-        font-family: Zara;
+        font-family: Terminal;
         font-weight: 400;
         padding-bottom: 1.5rem;
         font-size: 3.5rem;
         text-decoration: underline;
+        color: $darker-purple;
     }
     &__container{
         padding-bottom: 1rem;
@@ -44,15 +46,15 @@
         color: $white;
         border-style: none;
         border-radius: 1.25rem;
-        font-family: "Zara";
+        font-family: Terminal;
         font-weight: 400;
         font-size: 2rem;
         padding-left: 1rem;
         padding-right: 1rem;
         padding-top: 0.5rem;
         padding-bottom: 0.5rem;
-        -webkit-filter: drop-shadow( 12px  green);
-        filter: drop-shadow(12px 12px 12px  #a3b18a);
+        -webkit-filter: drop-shadow(3px 13px 23px #a2ff80);
+        filter: drop-shadow(3px 13px 23px #a2ff80);
         
 
         &:hover{

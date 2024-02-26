@@ -5,9 +5,9 @@ import OptionAButton from '../../../components/OptionAButton/OptionAButton';
 import OptionBButton from '../../../components/OptionBButton/OptionBButton';
 import { useState, useEffect } from 'react';
 import friendv3 from "../../../assets/images/characters/claw_grl.gif"
-import placeholder from "../../../assets/images/characters/placeholder.png"
 import { Link } from 'react-router-dom';
 import bouncerGif from "../../../assets/images/misc/greenGuyHoodie.gif"
+import girl from "../../../assets/images/characters/gorl.png"
 
 
 const GamePage3a = ({cash, updateCash}) => {
@@ -45,7 +45,7 @@ const GamePage3a = ({cash, updateCash}) => {
 
 
       <div className='gamePage3__characterz'>
-        <img className='gamePage3__characterz--left' alt='gameplayer' src={placeholder}/>
+        <img className='gamePage3__characterz--left' alt='gameplayer' src={girl}/>
         <img src={bouncerGif} alt="bouncer" className='gamePage3__characterz--centre'/> 
         <img className='gamePage3__characterz--right ' alt='bestie' src={friendv3}/> 
       </div>

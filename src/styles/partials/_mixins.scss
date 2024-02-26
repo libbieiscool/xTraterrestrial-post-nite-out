@@ -25,11 +25,11 @@
 @mixin textBox{
     display: flex;
     flex-direction: column;
-    background-color: $light-pink;
+    background-color: $pink;
     border-radius: 0.75rem;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
-    color:$grey; 
+    color:$darker-purple; 
     height: 7rem;
     margin-top: 0.5rem;
     margin-bottom:1rem; 
@@ -118,7 +118,7 @@
     padding-right: 1.5rem;
     padding-top:1rem; 
     padding-bottom: 1rem;
-    background-color: pink;
+    background-color: $pink;
     border-radius: 1rem;
     width:40%; 
     display: flex;
@@ -136,7 +136,7 @@
     }
     
     &:hover{
-        background-color: aqua;
+        background-color: $dark-purple;
         transition: ease-in-out, 0.25s;
 
         animation-name: tossing;
@@ -160,7 +160,7 @@
       margin-right:auto; 
       margin-left: auto;
       border-radius: 0.5rem;
-      background-color: white;
+    //   background-color: white;
         width: 95vw;
         height: 95vh;
       box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;

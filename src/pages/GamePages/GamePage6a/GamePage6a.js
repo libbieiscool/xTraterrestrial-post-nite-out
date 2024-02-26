@@ -6,7 +6,8 @@ import OptionAButton from '../../../components/OptionAButton/OptionAButton';
 import OptionBButton from '../../../components/OptionBButton/OptionBButton';
 import TextBoxTop from '../../../components/TextBoxTop/TextBoxTop';
 import { Link } from 'react-router-dom';
-
+import girl from "../../../assets/images/characters/gorl.png"
+import coin from "../../../assets/icons/coin.png"
 const GamePage6a = ({cash, updateCash}) => {
 
     useEffect(()=>{
@@ -45,6 +46,14 @@ const GamePage6a = ({cash, updateCash}) => {
                 <OptionBButton optionB={optionB}/> 
             </div>
         </Link>
+    </div>
+
+    <div className='gamePage6a__character'>
+    <img src={coin} className='gamePage6a__character--coin'/>
+
+      <img src={girl} className='gamePage6a__character--img'/>
+      <img src={coin} className='gamePage6a__character--coin'/>
+
     </div>
 
     </div>

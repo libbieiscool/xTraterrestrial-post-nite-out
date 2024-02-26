@@ -5,6 +5,8 @@ import TextBoxTop from '../../../components/TextBoxTop/TextBoxTop';
 import OptionAButton from '../../../components/OptionAButton/OptionAButton';
 import OptionBButton from '../../../components/OptionBButton/OptionBButton';
 import { Link } from 'react-router-dom';
+import girl from "../../../assets/images/characters/gorl.png"
+import ted from "../../../assets/images/characters/ted2.png"
 //SID PAGE
 const GamePage8b = () => {
 
@@ -22,7 +24,7 @@ const GamePage8b = () => {
       )
 
   return (
-    <div className='body__block--character gamePage7'>
+    <div className='body__block--character gamePage8'>
     
         <div className='gamePage8__textBox'>
              <TextBoxTop body={body}/>
@@ -40,6 +42,12 @@ const GamePage8b = () => {
                     <OptionBButton optionB={optionB}/> 
                 </div>
             </Link>
+        </div>
+
+        <div className='gamePage8__character'>
+          <img src={girl} className='gamePage8__character--img'/>
+          <img src={ted} className='gamePage8__character--img'/>
+
         </div>
 
     </div>

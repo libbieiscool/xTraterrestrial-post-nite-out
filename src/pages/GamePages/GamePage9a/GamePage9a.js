@@ -5,6 +5,7 @@ import TextBoxTop from '../../../components/TextBoxTop/TextBoxTop';
 import OptionAButton from '../../../components/OptionAButton/OptionAButton';
 import OptionBButton from '../../../components/OptionBButton/OptionBButton';
 import { Link } from 'react-router-dom';
+import ted from "../../../assets/images/characters/ted2.png"
 
 //GARBAGE CAN
 const GamePage9a = () => {
@@ -41,6 +42,11 @@ const GamePage9a = () => {
                     <OptionBButton optionB={optionB}/> 
                 </div>
            </Link>
+        </div>
+
+        <div className='gamePage9__character'>
+          <img src={ted} className='gamePage9__character--img'/>
+
         </div>
 
     </div>

@@ -5,6 +5,8 @@ import TextBoxTop from '../../../components/TextBoxTop/TextBoxTop';
 import OptionAButton from '../../../components/OptionAButton/OptionAButton';
 import OptionBButton from '../../../components/OptionBButton/OptionBButton';
 import { Link } from 'react-router-dom';
+import girl from "../../../assets/images/characters/gorl.png"
+import orangeGirl from "../../../assets/images/characters/orangeGRL.png"
 //ALLEY
 const GamePage8a = () => {
 
@@ -23,7 +25,7 @@ const GamePage8a = () => {
 
 
   return (
-    <div className='body__block--character gamePage7'>
+    <div className='body__block--character gamePage8'>
     
         <div className='gamePage8__textBox'>
             <TextBoxTop body={body}/>
@@ -42,6 +44,12 @@ const GamePage8a = () => {
                     <OptionBButton optionB={optionB}/> 
                 </div>
             </Link>
+        </div>
+
+        <div className='gamePage8__character'>
+          <img src={girl} className='gamePage8__character--girls'/>
+          <img src={orangeGirl} className='gamePage8__character--girls'/>
+
         </div>
 
 </div>
