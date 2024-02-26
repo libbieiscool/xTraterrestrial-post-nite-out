@@ -7,6 +7,10 @@
 .end{
 @include gamepage;
     display: flex;
+    justify-content: flex-end; 
+    background-image: url("../../../assets/images/background/Bedrrom.jpg");
+    background-position: center;
+    background-size: 100%;
 
     &__character{
         display: flex;

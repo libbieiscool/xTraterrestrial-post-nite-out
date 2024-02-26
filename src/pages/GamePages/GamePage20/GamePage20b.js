@@ -30,7 +30,7 @@ const GamePage20b = () => {
       <p className='gamePage20b__fortune floating' id="fortuneDisplay"></p>
 
       <div className='gamePage20b__options'>
-       <Link to={`end`}>
+       <Link to={`/end`}>
             <div className='gamePage20b__optionB'>
             <OptionBButton optionB={optionB}/> 
             </div>

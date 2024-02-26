@@ -4,6 +4,7 @@ import { useState } from 'react';
 import TextBoxTop from '../../../components/TextBoxTop/TextBoxTop';
 import SingleOptionButton from '../../../components/SingleOptionButton/SingleOptionButton';
 import { Link } from 'react-router-dom';
+import girl from "../../../assets/images/characters/girlThinking.png"
 
 
 //FORTUNE TELLER
@@ -26,7 +27,13 @@ const GamePage20 = () => {
         <Link to={`/page20b`} className='gamePage20__option'>
                 <SingleOptionButton singleOption={singleOption}/> 
         </Link>
+      <div className='gamePage20__character'>
+          <img src={girl} className='gamePage20__character--img'/>
     </div>
+
+
+    </div>
+
   )
 }
 

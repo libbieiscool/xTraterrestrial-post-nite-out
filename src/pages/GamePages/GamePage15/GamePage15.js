@@ -5,6 +5,8 @@ import TextBoxTop from '../../../components/TextBoxTop/TextBoxTop';
 import OptionAButton from '../../../components/OptionAButton/OptionAButton';
 import OptionBButton from '../../../components/OptionBButton/OptionBButton';
 import { Link } from 'react-router-dom';
+import girl from "../../../assets/images/characters/gorl.png"
+import hsgirl from "../../../assets/images/characters/hsGrl.png"
 
 const GamePage15 = () => {
     const [body,setBody] = useState(
@@ -37,8 +39,14 @@ const GamePage15 = () => {
             <OptionBButton optionB={optionB}/> 
           </div>
         </Link>
-      
     </div>
+
+    <div className='gamePage15__character'>
+          <img src={hsgirl} className='gamePage15__character--img'/>
+
+
+    </div>
+
 </div>
   )
 }

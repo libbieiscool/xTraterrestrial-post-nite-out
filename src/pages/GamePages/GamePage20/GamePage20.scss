@@ -7,6 +7,10 @@
 .gamePage20{
     @include gamepage;
     justify-content: flex-end; 
+    background-image: url("../../../assets/images/background/streetNotScary.jpg");
+    background-position: center;
+    background-size: 100%;
+
  
      &__textBox{
          @include topTextPlacement
@@ -28,14 +32,22 @@
      }
  
      &__character{
-         display: flex;
-         flex-direction: row;    
-         &--right{
-             @include rightCharacter
-         }
-         &--left{
-             @include leftCharacter
-         }
-     } 
+        display: flex;
+        flex-direction: row; 
+        justify-content: center;
+        align-items: center;
+        &--img{
+           height: 20rem;
+           padding-left: 3rem;
+           padding-right: 3rem;
+           
+        }   
+        &--girls{
+           height: 23rem;
+           padding-left: 3rem;
+           padding-right: 3rem;
+        }
+      
+    } 
     
  }

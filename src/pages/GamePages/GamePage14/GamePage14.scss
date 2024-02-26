@@ -6,6 +6,9 @@
 .gamePage14{
     @include gamepage;
     justify-content: flex-end; 
+    background-image: url("../../../assets/images/background/scaryAlley.jpg");
+    background-position: center;
+    background-size: 100%;
  
      &__textBox{
          @include topTextPlacement
@@ -22,19 +25,26 @@
      @include optionB
      }
  
-     &__textBoxBottom{
-        @include textBottomPlacement
-     }
- 
+   
+     
      &__character{
-         display: flex;
-         flex-direction: row;    
-         &--right{
-             @include rightCharacter
-         }
-         &--left{
-             @include leftCharacter
-         }
-     } 
+        display: flex;
+        flex-direction: row; 
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 11rem;
+        &--img{
+           height: 5rem;
+           padding-left: 3rem;
+           padding-right: 3rem;
+           
+        }   
+        &--girls{
+           height: 23rem;
+           padding-left: 3rem;
+           padding-right: 3rem;
+        }
+      
+    } 
     
  }

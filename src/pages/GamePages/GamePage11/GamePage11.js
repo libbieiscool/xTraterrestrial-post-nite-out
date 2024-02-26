@@ -5,6 +5,9 @@ import TextBoxTop from '../../../components/TextBoxTop/TextBoxTop';
 import OptionAButton from '../../../components/OptionAButton/OptionAButton';
 import OptionBButton from '../../../components/OptionBButton/OptionBButton';
 import { Link } from 'react-router-dom';
+import blob from "../../../assets/images/characters/blob girl.png"
+import cyclopz from "../../../assets/images/characters/cyclopz.png"
+
 const GamePage11 = () => {
     const [body,setBody] = useState(
         {title:"",
@@ -19,25 +22,30 @@ const GamePage11 = () => {
         {text:"dont talk to them."}
       )
   return (
-    <div className='body__block--character gamePage'>
+    <div className='body__block--character gamePage11'>
 
-      <div className='gamePage__textBox'>
+      <div className='gamePage11__textBox'>
         <TextBoxTop body={body}/>
       </div>
 
-    <div className='gamePage__options'>
+    <div className='gamePage11__options'>
         <Link to={`/page11b`}>
-            <div className='gamePage__optionA'>
+            <div className='gamePage11__optionA'>
                 <OptionAButton optionA={optionA}/>
             </div>
         </Link>
 
         <Link to={`/page13`}>
-            <div className='gamePage__optionB'>
+            <div className='gamePage11__optionB'>
                 <OptionBButton optionB={optionB}/> 
             </div>
         </Link>
     </div>
+    <div className='gamePage8__character'>
+          <img src={blob} className='gamePage8__character--img'/>
+          <img src={cyclopz} className='gamePage8__character--img'/>
+
+        </div>
       
     </div>
   )

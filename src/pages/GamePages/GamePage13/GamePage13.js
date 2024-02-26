@@ -5,6 +5,7 @@ import TextBoxTop from '../../../components/TextBoxTop/TextBoxTop';
 import OptionAButton from '../../../components/OptionAButton/OptionAButton';
 import OptionBButton from '../../../components/OptionBButton/OptionBButton';
 import { Link } from 'react-router-dom';
+import girl from "../../../assets/images/characters/gorl.png"
 
 const GamePage13 = () => {
     const [body,setBody] = useState(
@@ -25,20 +26,24 @@ const GamePage13 = () => {
             <TextBoxTop body={body}/>
         </div>
 
-        <div className='gamePage__options'>
+        <div className='gamePage13__options'>
             <Link to={`/page15`} >
-                <div className='gamePage__optionA'>
+                <div className='gamePage13__optionA'>
                     <OptionAButton optionA={optionA}/>
                 </div>
             </Link>
 
             <Link to={`/page14`}>
-                <div className='gamePage__optionB'>
+                <div className='gamePage13__optionB'>
                     <OptionBButton optionB={optionB}/> 
                 </div>
             </Link>
-
       </div>
+
+      <div className='gamePage13__character'>
+          <img src={girl} className='gamePage13__character--img'/>
+
+        </div>
       
     </div>
   )

@@ -6,6 +6,10 @@
 .gamePage12{
     @include gamepage;
     justify-content: flex-end; 
+    background-image: url("../../../assets/images/background/rock.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
  
      &__textBox{
          @include topTextPlacement
