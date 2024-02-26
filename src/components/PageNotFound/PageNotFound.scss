@@ -1,0 +1,46 @@
+@use '../../styles/partials/globals.scss' as *; 
+@use '../../styles/partials/mixins.scss' as *; 
+@use '../../styles/partials/typography.scss' as *; 
+@use '../../styles/partials/variables' as *; 
+
+.pageNotFound{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url("../../assets/images/background/404bg.gif");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: $light-pink;
+
+    &__img{
+        height:15rem; 
+
+    }
+
+    &__text{
+        font-size: 5rem;
+        color: black;
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+    }
+
+    &__button{
+        border-style: none;
+        background-color: $light-purple;
+        border-radius: 0.5rem;
+        font-size: 2rem;
+        font-family: "Terminal";
+        padding-left: 1rem;
+        padding-right:1rem; 
+        padding-top:0.5rem; 
+        padding-bottom: 0.5rem;
+        margin-top: 1rem;
+        &:hover{
+            background-color:$dark-purple ;
+        }
+    }
+
+
+
+}

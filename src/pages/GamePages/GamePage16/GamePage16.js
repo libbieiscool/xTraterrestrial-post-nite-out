@@ -27,7 +27,7 @@ const GamePage16 = () => {
 
     <div className='gamePage16__options'>
 
-      <Link to={`/page15`}>
+      <Link to={`/page20`}>
         <div className='gamePage16__optionA'>
             <OptionAButton optionA={optionA}/>
         </div>

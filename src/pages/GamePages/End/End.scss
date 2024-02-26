@@ -1,0 +1,42 @@
+
+@use '../../../styles/partials/globals.scss' as *; 
+@use '../../../styles/partials/mixins.scss' as *; 
+@use '../../../styles/partials/typography.scss' as *; 
+@use '../../../styles/partials/variables' as *; 
+
+.end{
+@include gamepage;
+    display: flex;
+
+    &__character{
+        display: flex;
+        height: 25rem; 
+    }
+
+    &__option{
+        @include singleOption
+    }
+
+    &__textBoxBottom{
+        @include textBottomPlacement
+     }
+
+    &__text{
+        display: flex;
+        background-color: $light-purple; 
+        height:3rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        border-radius: 0.5rem;
+
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__textNcharacter{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+}

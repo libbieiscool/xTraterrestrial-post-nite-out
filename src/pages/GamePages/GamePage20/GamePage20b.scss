@@ -1,0 +1,64 @@
+@use '../../../styles/partials/globals.scss' as *; 
+@use '../../../styles/partials/mixins.scss' as *; 
+@use '../../../styles/partials/typography.scss' as *; 
+@use '../../../styles/partials/variables' as *; 
+
+.gamePage20b{
+    display: flex;
+    height: 100%;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    position: relative;
+    background-image: url('../../../assets/images/background/fortuneBG.gif');
+    background-repeat: none;
+    background-position: center;
+    background-size: 100%;
+
+    &__fortune{
+       font-size: 3rem;
+       -webkit-filter: drop-shadow(3px 13px 23px #00ff08);
+        filter: drop-shadow(3px 13px 23px #00ff08);
+       transition: all 0.2s ease;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       text-align: center;
+       align-self: center;
+
+
+    }
+
+ 
+     &__textBox{
+         @include topTextPlacement
+     }
+ 
+     &__option{
+         @include singleOptionTop
+     }
+     &__optionA{
+     @include optionA
+     }
+ 
+     &__optionB{
+     @include optionB
+     }
+ 
+     &__textBoxBottom{
+        @include textBottomPlacement
+     }
+
+ 
+     &__character{
+         display: flex;
+         flex-direction: row;    
+         &--right{
+             @include rightCharacter
+         }
+         &--left{
+             @include leftCharacter
+         }
+     } 
+    
+ }

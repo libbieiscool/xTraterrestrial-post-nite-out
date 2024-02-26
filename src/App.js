@@ -35,6 +35,9 @@ import GamePage17 from './pages/GamePages/GamePage17/GamePage17';
 import GamePage18 from './pages/GamePages/GamePage18/GamePage18';
 import GamePage19 from './pages/GamePages/GamePage19/GamePage19';
 import GamePage20b from './pages/GamePages/GamePage20/GamePage20b';
+import GamePage20 from './pages/GamePages/GamePage20/GamePage20';
+import PageNotFound from './components/PageNotFound/PageNotFound';
+import End from './pages/GamePages/End/End';
 
 function App() {
   const [currentCash, setCurrentCash] = useState(20)
@@ -80,7 +83,9 @@ function App() {
           <Route path="/page18" element={<GamePage18/>} />
           <Route path="/page19" element={<GamePage19/>}/>
           <Route path="/page20b" element={<GamePage20b/>}/>
-
+          <Route path="/page20" element={<GamePage20/>}/>
+          <Route path="end" element={<End/>} />
+          <Route path="*" element={<PageNotFound/>}/>
       </Routes>
       <Footer/>
       </BrowserRouter>

@@ -12,7 +12,7 @@ const GamePage15 = () => {
          text:"You start walking down the nice, visible, beautifully lit path when all of a sudden you hear someone yelling what sounds like your name. You look behind you and don't immediately recognize the woman yelling at you, but then it clicks... you went to highschool with this girl! The two of you start chatting and you immediately remember why you didnt stay friends, but as you chat she offers you a ride home. "
         })
     const [optionA, setOptionA] = useState(
-            { text:"say ''it was great catching up with you! Lets get coffee soon!'' (with no intention of ever getting coffee with her soon) and continue your hero's journey home. "}
+            { text:"Say ''it was great catching up with you! Lets get coffee soon!'' (with no intention to do so) and continue your walk. "}
            )
          
     const[optionB, setOptionB] = useState(
@@ -26,9 +26,11 @@ const GamePage15 = () => {
         </div>
 
     <div className='gamePage15__options'>
-        <div className='gamePage15__optionA'>
-          <OptionAButton optionA={optionA}/>
-        </div>
+      <Link to={`/page20`}>
+          <div className='gamePage15__optionA'>
+            <OptionAButton optionA={optionA}/>
+          </div>
+      </Link>
 
         <Link to={`/page19`} >
           <div className='gamePage15__optionB'>
