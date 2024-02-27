@@ -5,7 +5,7 @@ import TextBoxTop from '../../../components/TextBoxTop/TextBoxTop';
 import OptionAButton from '../../../components/OptionAButton/OptionAButton';
 import OptionBButton from '../../../components/OptionBButton/OptionBButton';
 import { Link } from 'react-router-dom';
-import farris from "../../../assets/images/characters/farris.png"
+import farris from "../../../assets/images/characters/farris.gif"
 
 const GamePage14 = () => {
     const [body,setBody] = useState(
@@ -39,8 +39,8 @@ const GamePage14 = () => {
             </div>
         </Link>
     </div>  
-    <div className='gamePage14__character'>
-          <img src={farris} className='gamePage14__character--img'/>
+        <div className='gamePage14__character'>
+            <img src={farris} className='gamePage14__character--img'/>
         </div>
     </div>
   )

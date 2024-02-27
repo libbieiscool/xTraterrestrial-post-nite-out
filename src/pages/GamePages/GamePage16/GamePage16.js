@@ -5,7 +5,7 @@ import TextBoxTop from '../../../components/TextBoxTop/TextBoxTop';
 import OptionAButton from '../../../components/OptionAButton/OptionAButton';
 import OptionBButton from '../../../components/OptionBButton/OptionBButton';
 import { Link } from 'react-router-dom';
-import farris from "../../../assets/images/characters/farris.png"
+import farris from "../../../assets/images/characters/farris.gif"
 
 const GamePage16 = () => {
     const [body,setBody] = useState(

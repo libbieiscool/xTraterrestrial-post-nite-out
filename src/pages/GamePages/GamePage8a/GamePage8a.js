@@ -6,7 +6,7 @@ import OptionAButton from '../../../components/OptionAButton/OptionAButton';
 import OptionBButton from '../../../components/OptionBButton/OptionBButton';
 import { Link } from 'react-router-dom';
 import girl from "../../../assets/images/characters/gorl.png"
-import orangeGirl from "../../../assets/images/characters/orangeGRL.png"
+import orangeGirl from "../../../assets/images/characters/orangeGRL.gif"
 //ALLEY
 const GamePage8a = () => {
 
