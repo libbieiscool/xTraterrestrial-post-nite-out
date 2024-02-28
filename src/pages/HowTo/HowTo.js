@@ -4,7 +4,7 @@ import OptionAButton from '../../components/OptionAButton/OptionAButton';
 import OptionBButton from '../../components/OptionBButton/OptionBButton';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-
+import Libbie from "../../assets/images/misc/libbieBingo.JPG"
 const HowTo = () => {
     const [optionA, setOptionA] = useState(
     { text:"You can click me to play"}

@@ -17,8 +17,15 @@
     text-wrap: wrap;
     &__header{
         font-size: 4rem;
+        display: flex;
         text-decoration: underline;
         padding-bottom: 1rem;
+        justify-content: center;
+    }
+    &__textBox{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     &__text{
@@ -27,6 +34,11 @@
         padding-left: 2rem;
         padding-right: 2rem;
         line-height: 2rem;
+
+    }
+    &__img{
+        height: 17rem;
+        padding-top: 1rem;
     }
 
 }
