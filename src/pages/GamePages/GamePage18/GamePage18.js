@@ -12,7 +12,7 @@ const GamePage18 = () => {
    
      <GameOver/>
  
-     <p className='gameOver__subtext'> You joined the communist party in hopes of wooing the handsome leader, but even YOU were not immune to his behaviour of being a Serial Cheater... </p>
+     <p className='gameOver__subtext'> In your quest to embrace communism, you completely forget about your quest to go home. You have bigger fish to fry than sleeping in a comfortable bed. </p>
     
     <Link to={`/page13`}>
      <button className='gameOver__button'>Try Again</button>

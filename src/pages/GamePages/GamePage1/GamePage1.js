@@ -1,7 +1,7 @@
 import React from 'react'; 
 import './GamePage1.scss';  
 import friendv2 from "../../../assets/images/characters/claw_grl.gif"
-import girl from "../../../assets/images/characters/gorl.png"
+import girl from "../../../assets/images/characters/gorl1.gif"
 import { useState } from 'react';
 import TextBoxTop from '../../../components/TextBoxTop/TextBoxTop';
 import SingleOptionButton from '../../../components/SingleOptionButton/SingleOptionButton';

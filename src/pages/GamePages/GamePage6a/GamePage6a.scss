@@ -7,6 +7,10 @@
     @include gamepage;
     justify-content: flex-end; 
     background-color: aliceblue;
+    background-image: url("../../../assets/images/background/Stocks.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: bottom;
  
      &__textBox{
          @include topTextPlacement

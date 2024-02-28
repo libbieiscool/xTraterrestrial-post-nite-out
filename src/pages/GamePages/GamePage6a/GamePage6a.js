@@ -6,7 +6,7 @@ import OptionAButton from '../../../components/OptionAButton/OptionAButton';
 import OptionBButton from '../../../components/OptionBButton/OptionBButton';
 import TextBoxTop from '../../../components/TextBoxTop/TextBoxTop';
 import { Link } from 'react-router-dom';
-import girl from "../../../assets/images/characters/gorl.png"
+import girl from "../../../assets/images/characters/gorl1.gif"
 import coin from "../../../assets/icons/coin.png"
 const GamePage6a = ({cash, updateCash}) => {
 

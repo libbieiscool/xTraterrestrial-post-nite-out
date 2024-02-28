@@ -2,14 +2,10 @@ import React from 'react';
 import "../GamePage10/GamePage10.scss"; 
 import gameOver from '../../../assets/icons/gameOver.png'; 
 import fire from '../../../assets/images/background/fire.png'; 
-
+import { Link } from 'react-router-dom';
 const GamePage10 = () => {
   return (
     <div className='body__block--character gamePage10'>
-        <h2 className='gamePage10__text'>
-        when you arrive at Sid's house any last shreds of admiration you might have had for him start to fizzle away... he says you can wait for him on the  bed while he cleans up. You wait patiently looking out into the sea of Space McDonald's wrappers and garbage littered around his sheet-less, mattress on the floor bed setup. You hear the wooden floors in the hallway creak as someone approaches the room except its not Sid who enters the room... but who you soon learn is Sid's GF... She informs you its best you sleep on the couch tonight. 
-
-        </h2>
         <div className='gameOver '>
         <img className='gameOver__img' alt="game over text" src={gameOver} /> 
         
@@ -19,6 +15,13 @@ const GamePage10 = () => {
             <img className='gameOver__fire' alt="fire" src={fire}/> 
         </div>
         </div>
+        <h2 className='gamePage10__text'>
+        Any idea that a romance between the two of you could be rekindled is quickly extinguished. When you and Sid unlock the door to his apartment you find his girlfriend waiting on the couch for his return clearly upset, expecting something like this. She lets you sleep on the couch while the two fight in another room. 
+
+        </h2>
+        <Link to={`/page13`}>
+        <button className='gameOver__button'>Try Again</button>
+        </Link>
 
     </div>
   )

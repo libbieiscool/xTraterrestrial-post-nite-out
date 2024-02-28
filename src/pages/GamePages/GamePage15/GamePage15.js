@@ -6,7 +6,7 @@ import OptionAButton from '../../../components/OptionAButton/OptionAButton';
 import OptionBButton from '../../../components/OptionBButton/OptionBButton';
 import { Link } from 'react-router-dom';
 import girl from "../../../assets/images/characters/gorl.png"
-import hsgirl from "../../../assets/images/characters/hsGrl.png"
+import hsgirl from "../../../assets/images/characters/Pgirl.gif"
 
 const GamePage15 = () => {
     const [body,setBody] = useState(
@@ -18,7 +18,7 @@ const GamePage15 = () => {
            )
          
     const[optionB, setOptionB] = useState(
-             {text:"Get a FREE ride home with her... the cost is having to listen to this kind of annoying woman talk for 30 min at you"}
+             {text:"Get a FREE ride home with her! The cost is having to listen her talk for 30 minutes with her boyfriend."}
            )
 
   return (

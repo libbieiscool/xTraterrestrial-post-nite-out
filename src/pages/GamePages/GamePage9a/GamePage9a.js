@@ -5,7 +5,7 @@ import TextBoxTop from '../../../components/TextBoxTop/TextBoxTop';
 import OptionAButton from '../../../components/OptionAButton/OptionAButton';
 import OptionBButton from '../../../components/OptionBButton/OptionBButton';
 import { Link } from 'react-router-dom';
-import ted from "../../../assets/images/characters/ted2.png"
+import ted from "../../../assets/images/characters/ted2.gif"
 
 //GARBAGE CAN
 const GamePage9a = () => {

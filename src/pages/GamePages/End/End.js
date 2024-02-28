@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 const End = () => {
     const [body,setBody] = useState(
         {title:"",
-         text:"After a long and winding path, you finally unlock the door to your apartment. Waiting inside your room is your bed and comforter and you couldnt be more happy to see them. You crawl into bed and almost immediately fall asleep. Congratulations! You have won the game! "
+         text:"After what seemed like a night that would never end you finally unlock the door to your apartment and crawl into your bed. You sleep almost immediately dreaming of all the paths that could have been. YOU HAVE WON THE GAME! "
         })
     const [singleOption, setSingleOption]= useState(
             {text:"start over"}

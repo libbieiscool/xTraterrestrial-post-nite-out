@@ -4,7 +4,7 @@ import { useState } from 'react';
 import TextBoxTop from '../../../components/TextBoxTop/TextBoxTop';
 import SingleOptionButton from '../../../components/SingleOptionButton/SingleOptionButton';
 import { Link } from 'react-router-dom';
-import girl from "../../../assets/images/characters/girlThinking.png"
+import girl from "../../../assets/images/characters/girlThinking.gif"
 
 
 //FORTUNE TELLER
@@ -12,7 +12,7 @@ const GamePage20 = () => {
 
     const [body,setBody] = useState(
         {title:"",
-         text:"As you walk home on your path, you see a group of people surrounding a figure up ahead. You stop to see what the commotion is about and find an old woman is reading people's fortunes. Maybe she could sense your energy, weakened by a long night out, but almost immediately the fortune teller looks you dead in the eyes and asks to read you your fortune."
+         text:"As you walk home on your path, you run into a mysterious older woman who offers to read your fortune. "
         })
 
      const [singleOption, setSingleOption]= useState(

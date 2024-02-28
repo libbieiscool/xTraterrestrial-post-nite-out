@@ -8,7 +8,7 @@ import friendv2 from "../../../assets/images/characters/claw_grl.gif"
 import placeholder from "../../../assets/images/characters/placeholder.png"
 import hand from "../../../assets/images/misc/MuneyGif.gif"
 import { Link } from 'react-router-dom';
-import girl from "../../../assets/images/characters/gorl.png"
+import girl from "../../../assets/images/characters/gorl1.gif"
 
 
 const GamePage2 = () => {

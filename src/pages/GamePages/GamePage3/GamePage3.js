@@ -7,7 +7,7 @@ import { useState } from 'react';
 import friendv3 from "../../../assets/images/characters/claw_grl.gif"
 import { Link } from 'react-router-dom';
 import bouncerGif from "../../../assets/images/misc/greenGuyHoodie.gif"
-import girl from "../../../assets/images/characters/gorl.png"
+import girl from "../../../assets/images/characters/gorl1.gif"
 
 const GamePage3 = () => {
 

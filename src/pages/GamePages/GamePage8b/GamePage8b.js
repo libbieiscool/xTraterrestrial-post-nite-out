@@ -5,14 +5,14 @@ import TextBoxTop from '../../../components/TextBoxTop/TextBoxTop';
 import OptionAButton from '../../../components/OptionAButton/OptionAButton';
 import OptionBButton from '../../../components/OptionBButton/OptionBButton';
 import { Link } from 'react-router-dom';
-import girl from "../../../assets/images/characters/gorl.png"
-import ted from "../../../assets/images/characters/ted2.png"
+import girl from "../../../assets/images/characters/gorlTop.gif"
+import ted from "../../../assets/images/characters/ted2.gif"
 //SID PAGE
 const GamePage8b = () => {
 
     const [body,setBody] = useState(
         {title:"",
-         text:"After a relatively brutal puking session you lift your head to see a man leaning on the side of the building and smoking a cig... suddenly you realize its Sid: an old flame/ex-situationship. In your time together you had some of the best Alien sex you've ever had ... but the impact this situationship had on your confidence was detrimental..."
+         text:"After a relatively brutal puking session you lift your head to see a man leaning on the side of the building and smoking a cig... suddenly you realize its Sid: an old flame/ex-situationship. In your time together you had lots of fun, but the impact this situationship had on your confidence was less than fun."
         })
     
       const [optionA, setOptionA] = useState(

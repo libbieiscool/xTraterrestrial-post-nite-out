@@ -5,7 +5,7 @@ import TextBoxTop from '../../../components/TextBoxTop/TextBoxTop';
 import OptionAButton from '../../../components/OptionAButton/OptionAButton';
 import OptionBButton from '../../../components/OptionBButton/OptionBButton';
 import { Link } from 'react-router-dom';
-import girl from "../../../assets/images/characters/gorl.png"
+import girl from "../../../assets/images/characters/gorl1.gif"
 
 const GamePage13 = () => {
     const [body,setBody] = useState(

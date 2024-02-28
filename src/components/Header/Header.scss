@@ -70,6 +70,7 @@
 }
 &__cash{
   margin-right:1rem; 
+
 }
 
 .cash{
@@ -83,6 +84,11 @@
   border-radius: 0.5rem;
   border: $light-pink 0.5rem solid;
   margin-right: 1rem;
+  &__icon{
+    height: 1.5rem;
+    padding-right: 0.5rem;
+
+  }
 
 }
 

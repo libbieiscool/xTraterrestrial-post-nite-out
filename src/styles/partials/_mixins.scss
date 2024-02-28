@@ -25,7 +25,10 @@
 @mixin textBox{
     display: flex;
     flex-direction: column;
-    background-color: $pink;
+    background-color: #f2eda7;
+    // background-color: aliceblue;
+    border-style: solid 1rem;
+    border-color:#e2b71d ;
     border-radius: 0.75rem;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
@@ -36,6 +39,8 @@
     margin-left: 1.5rem;
     margin-right: 1.5rem;
     justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
     
 }
 
@@ -88,7 +93,7 @@
 
     @include tablet {
         left:-1rem; 
-        bottom: 5rem;
+        bottom: 4rem;
     }
     @include desktop{
         left:5rem; 
@@ -105,10 +110,10 @@
 
     @include tablet {
         right:-1rem; 
-        bottom: 5rem;
+        bottom: 4rem;
     }
     @include desktop{
-        right:5rem; 
+        right:4rem; 
     }
 }
 
@@ -118,12 +123,15 @@
     padding-right: 1.5rem;
     padding-top:1rem; 
     padding-bottom: 1rem;
-    background-color: $pink;
+    background-color: $pink-transparent;
     border-radius: 1rem;
     width:40%; 
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-style: solid;
+    // border-color: ;
 
     @include tablet{
         width:50%; 

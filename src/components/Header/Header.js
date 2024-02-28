@@ -2,6 +2,7 @@ import React from 'react';
 import '../Header/Header.scss'; 
 import planet from '../../assets/icons/world.png'; 
 import heart from "../../assets/icons/heart.png"; 
+import coin from "../../assets/icons/coin.png"
 import { NavLink, Link } from 'react-router-dom';
 import { useState } from 'react';
 
@@ -28,7 +29,7 @@ const Header = ({cash}) => {
         <div className='header__worldCash'>
 
         <div className='cash'>
-          <h3>$:</h3>
+          <img src={coin} alt="cash Icon" className='cash__icon'/>
           <h3>{cash}</h3>
         </div>
         <Link to={`https://open.spotify.com/playlist/6n3xt97Oha8gAL1T1KODUP?si=0c636d94e9d74b11`}>

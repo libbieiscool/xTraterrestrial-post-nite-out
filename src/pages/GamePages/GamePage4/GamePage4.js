@@ -5,7 +5,7 @@ import { useState } from 'react';
 import TextBoxTop from '../../../components/TextBoxTop/TextBoxTop';
 import OptionAButton from '../../../components/OptionAButton/OptionAButton';
 import OptionBButton from '../../../components/OptionBButton/OptionBButton';
-import girlThinking from "../../../assets/images/characters/girlThinking.png"
+import girlThinking from "../../../assets/images/characters/girlThinking.gif"
 
 const GamePage4 = () => {
 
