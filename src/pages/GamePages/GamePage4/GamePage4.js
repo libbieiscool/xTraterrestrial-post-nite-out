@@ -18,7 +18,7 @@ const GamePage4 = () => {
        )
        const [body,setBody] = useState(
         {title:"",
-         text:"Despite your best efforts (or lack thereof) the bouncer wont let you back into the club to try and get your wallet. You'll have to make it through the rest of the night with what little cash you have/dont have. You check the price for a space Uber home on your phone only to realize that its surge prices and the cash you have isnt going to cover the cost of the cab home. "
+         text:"Despite your best efforts (or lack thereof) the bouncer wont let you back into the club to try and get your wallet. You'll have to make it through the rest of the night with what little cash you have."
         })
 
 

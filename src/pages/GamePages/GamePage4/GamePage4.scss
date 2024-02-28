@@ -7,6 +7,10 @@
    @include gamepage;
    justify-content: flex-end; 
    background: linear-gradient(0deg, rgba(255,183,38,1) 0%, rgba(255,255,255,1) 51%);
+   background-image: url("../../../assets/images/background/clurb.jpg");
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: 100%;
 
 
     &__textBox{

@@ -14,7 +14,7 @@ const HowTo = () => {
       {text:"Or you can click me!"}
     )
   return (
-    <div className='howTo body__block'>
+    <div className='howTo'>
       <h1 className='howTo__header'>How to Play</h1>
       
     <ol className='howTo__list'>
