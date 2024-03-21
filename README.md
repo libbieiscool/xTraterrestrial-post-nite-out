@@ -1,3 +1,12 @@
+# xTraTerrestrial Pose Nite Out Adventure: The Game #
+
+In this game you are a 20 something alien girl in a distant galacy on a planet not so different from our own. Your goal in the game is to make it home safely through a choose your own adventure style game where you can meet and interact with a whole collection of strange and unusual characters. 
+
+This was a project made as my capstone for the Software Engineering Bootcamp with BrainStation in Feb of 2024. As with any program made in the span of a week and a half, it's got some areas that are more developed than others. 
+
+If the game breaks - simply return to the main page by clicking on the spinninf icon in the header and reload the page. 
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
