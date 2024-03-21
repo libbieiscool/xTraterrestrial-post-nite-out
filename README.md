@@ -6,6 +6,9 @@ This was a project made as my capstone for the Software Engineering Bootcamp wit
 
 If the game breaks - simply return to the main page by clicking on the spinninf icon in the header and reload the page. 
 
+Thank you to all my wonderful friends who helped me brainstorm storylines and make the assets, in particular thank you Madi and Sophie. 
+
+The game is designed and coded entirely by me (Libbie Farrell) If you have any questions or want to talk - reach out to me at: Whoislibbiefarrell@gmail.com
 
 # Getting Started with Create React App
 
